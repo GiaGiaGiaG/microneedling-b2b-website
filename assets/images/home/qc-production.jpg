@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600">
+  <rect width="960" height="600" fill="#edf2f7"/>
+  <rect x="1" y="1" width="958" height="598" fill="none" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="8 6"/>
+  <text x="480" y="272" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#94a3b8" text-anchor="middle" letter-spacing="2">REPLACE WITH REAL PHOTO</text>
+  <text x="480" y="300" font-family="system-ui,sans-serif" font-size="15" font-weight="800" fill="#64748b" text-anchor="middle">qc-production.jpg</text>
+  <text x="480" y="324" font-family="system-ui,sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">Controlled assembly or QC inspection — production environment</text>
+  <text x="480" y="340" font-family="system-ui,sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">Not a medical setting · Gloved hands preferred</text>
+</svg>

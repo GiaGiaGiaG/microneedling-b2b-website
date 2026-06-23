@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="860" viewBox="0 0 720 860">
+  <rect width="720" height="860" fill="#edf2f7"/>
+  <rect x="1" y="1" width="718" height="858" fill="none" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="8 6"/>
+  <text x="360" y="406" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#94a3b8" text-anchor="middle" letter-spacing="2">REPLACE WITH REAL PHOTO</text>
+  <text x="360" y="434" font-family="system-ui,sans-serif" font-size="15" font-weight="800" fill="#64748b" text-anchor="middle">oem-starter-kit.jpg</text>
+  <text x="360" y="458" font-family="system-ui,sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">OEM/ODM starter kit — device, cartridges, box, manual</text>
+  <text x="360" y="474" font-family="system-ui,sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">No model · Studio product photo style</text>
+</svg>

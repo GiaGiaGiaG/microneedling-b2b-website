@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="680" viewBox="0 0 960 680">
+  <rect width="960" height="680" fill="#edf2f7"/>
+  <rect x="1" y="1" width="958" height="678" fill="none" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="8 6"/>
+  <rect x="380" y="300" width="200" height="80" rx="8" fill="#e2e8f0"/>
+  <text x="480" y="268" font-family="system-ui,sans-serif" font-size="13" font-weight="700" fill="#94a3b8" text-anchor="middle" letter-spacing="2">REPLACE WITH REAL PHOTO</text>
+  <text x="480" y="334" font-family="system-ui,sans-serif" font-size="15" font-weight="800" fill="#64748b" text-anchor="middle">hero-product-system.jpg</text>
+  <text x="480" y="357" font-family="system-ui,sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">Microneedling pen system with cartridges, heads, packaging</text>
+  <text x="480" y="373" font-family="system-ui,sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">Clean studio / white background · No model</text>
+</svg>
