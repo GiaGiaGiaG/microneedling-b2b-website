@@ -14,16 +14,16 @@
 const SITE_CONFIG = {
 
     // ── Company Identity ──────────────────────────────────
-    COMPANY_NAME: '[REPLACE_WITH_COMPANY_NAME]',      // Legal entity name, e.g. "Guangzhou Beauty Tech Co., Ltd."
-    BRAND_NAME:   '[BRAND_NAME]',                      // Marketing brand shown in header/logo, e.g. "AuraTech"
+    COMPANY_NAME: 'Guangzhou Dermadream Electronic Technology Co., Ltd.',
+    BRAND_NAME:   'Dermadream',
 
     // ── Contact Information ───────────────────────────────
-    BUSINESS_EMAIL:    '[REPLACE_WITH_EMAIL]',          // e.g. "sales@yourcompany.com"
-    WHATSAPP_NUMBER:   '[REPLACE_WITH_WHATSAPP_NUMBER]',// Digits only, no +, spaces, or dashes. e.g. "8613800000000"
-    FACTORY_ADDRESS:   '[REPLACE_WITH_FACTORY_ADDRESS]',// e.g. "Building 5, Industrial Zone, Guangzhou, China"
+    BUSINESS_EMAIL:    'info@dermadreamglobal.com',
+    WHATSAPP_NUMBER:   '8618998490241',
+    FACTORY_ADDRESS:   'Guangzhou, Guangdong, China',
 
     // ── Domain ────────────────────────────────────────────
-    DOMAIN: 'https://yourdomain.com',                   // Your live domain, e.g. "https://www.yourcompany.com"
+    DOMAIN: 'https://dermadreamglobal.com',                   // Your live domain, e.g. "https://www.yourcompany.com"
 
     // ── Social Links ──────────────────────────────────────
     LINKEDIN_URL: 'https://linkedin.com/company/[REPLACE_WITH_LINKEDIN]',
