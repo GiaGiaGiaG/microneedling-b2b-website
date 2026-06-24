@@ -1,486 +1,1093 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-  <title>OEM/ODM Microneedling Tool Systems Manufacturer | Specialized B2B Supplier</title>
-  <meta name="description" content="Specialized manufacturing partner for cosmetic-use microneedling pens, needle cartridges, applicator heads, crystal heads, private label packaging, and stable consumable supply."/>
-  <meta name="keywords" content="microneedling tool manufacturer, OEM ODM beauty tools, needle cartridges supplier, private label beauty devices, cosmetic-use tools"/>
-  <link rel="stylesheet" href="assets/css/style.css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OEM/ODM Microneedling Tool Systems Manufacturer | Dermadream</title>
+  <meta name="description" content="Dermadream supports global B2B buyers with cosmetic-use microneedling tool systems, OEM/ODM project support, private label packaging, and stable consumable supply planning." />
+  <style>
+    :root {
+      --navy: #08264d;
+      --navy-2: #123760;
+      --blue: #2467d6;
+      --blue-soft: #edf5ff;
+      --ink: #0b2144;
+      --muted: #52647a;
+      --line: #dde7f2;
+      --soft: #f6f9fd;
+      --white: #ffffff;
+      --green: #16a765;
+      --shadow: 0 22px 58px rgba(15, 46, 88, 0.10);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      color: var(--ink);
+      background: #fff;
+      line-height: 1.5;
+      overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    .container { width: min(1400px, calc(100% - 72px)); margin: 0 auto; }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255,255,255,.94);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(14px);
+    }
+    .nav {
+      height: 76px;
+      display: grid;
+      grid-template-columns: 220px 1fr auto;
+      align-items: center;
+      gap: 28px;
+    }
+    .brand {
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: .02em;
+      color: var(--navy);
+    }
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      gap: 44px;
+      font-size: 14px;
+      font-weight: 650;
+    }
+    .nav-links a {
+      position: relative;
+      padding: 28px 0;
+    }
+    .nav-links a.active { color: var(--blue); }
+    .nav-links a.active::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 16px;
+      height: 2px;
+      background: var(--blue);
+    }
+    .nav-actions { display: flex; gap: 14px; align-items: center; }
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+    .nav-toggle {
+      display: none;
+      width: 44px;
+      height: 44px;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      flex-direction: column;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      color: var(--navy);
+      cursor: pointer;
+    }
+    .nav-toggle span:not(.sr-only) {
+      width: 18px;
+      height: 2px;
+      background: currentColor;
+      border-radius: 2px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 44px;
+      padding: 0 24px;
+      border: 1px solid var(--navy);
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 750;
+      white-space: nowrap;
+    }
+    .btn-primary {
+      color: #fff;
+      background: linear-gradient(135deg, #0a2f5d, #041b38);
+      box-shadow: 0 14px 30px rgba(3, 25, 54, .2);
+    }
+    .btn-light { background: #fff; color: var(--navy); }
+    .btn-whatsapp { background: var(--green); border-color: var(--green); color: #fff; }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background:
+        linear-gradient(90deg, rgba(255,255,255,.98) 0%, rgba(247,251,255,.94) 45%, rgba(237,245,255,.76) 100%),
+        radial-gradient(circle at 76% 22%, rgba(36,103,214,.14), transparent 36%);
+      border-bottom: 1px solid var(--line);
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(36,103,214,.055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(36,103,214,.045) 1px, transparent 1px);
+      background-size: 72px 72px;
+      mask-image: linear-gradient(90deg, rgba(0,0,0,.15), rgba(0,0,0,.75));
+      pointer-events: none;
+    }
+    .hero-grid {
+      position: relative;
+      min-height: 500px;
+      display: grid;
+      grid-template-columns: 41% 59%;
+      align-items: center;
+      gap: 30px;
+      padding: 46px 0 44px;
+      z-index: 1;
+    }
+    .hero-grid > div:first-child {
+      position: relative;
+      z-index: 2;
+    }
+    .eyebrow {
+      margin: 0 0 14px;
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .24em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0;
+      max-width: 670px;
+      color: var(--navy);
+      font-size: clamp(42px, 4.55vw, 68px);
+      line-height: .98;
+      letter-spacing: 0;
+    }
+    .hero-copy {
+      margin: 22px 0 24px;
+      max-width: 540px;
+      color: #445774;
+      font-size: 17px;
+      line-height: 1.65;
+    }
+    .hero-ctas { display: flex; gap: 18px; margin-bottom: 26px; }
+    .trust-points {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(90px, 1fr));
+      gap: 22px;
+      max-width: 560px;
+    }
+    .trust-point {
+      display: grid;
+      grid-template-columns: 32px 1fr;
+      gap: 10px;
+      align-items: center;
+      font-size: 13px;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+    .icon {
+      width: 32px;
+      height: 32px;
+      color: var(--blue);
+    }
+    .hero-visual {
+      position: absolute;
+      top: 0;
+      right: calc((100vw - 100%) / -2);
+      bottom: 0;
+      left: 46%;
+      z-index: 0;
+      min-width: 0;
+      pointer-events: none;
+    }
+    .hero-visual::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: linear-gradient(90deg, rgba(255,255,255,.96) 0%, rgba(255,255,255,.76) 18%, rgba(255,255,255,.14) 42%, rgba(255,255,255,0) 68%);
+      pointer-events: none;
+    }
+    .image-slot {
+      position: relative;
+      width: 100%;
+      min-height: 260px;
+      overflow: hidden;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,.82), rgba(235,243,253,.82)),
+        repeating-linear-gradient(135deg, rgba(36,103,214,.08) 0 1px, transparent 1px 18px);
+      border: 1px solid rgba(180,199,224,.72);
+    }
+    .hero-visual .image-slot {
+      height: 100%;
+      min-height: 100%;
+      border: 0;
+      background: linear-gradient(135deg, rgba(255,255,255,.96), rgba(232,241,252,.64));
+      box-shadow: none;
+    }
+    .hero-visual .image-slot img {
+      object-fit: cover;
+      object-position: center right;
+    }
+    .image-slot img {
+      width: 100%;
+      height: 100%;
+      min-height: inherit;
+      object-fit: cover;
+    }
+    .image-slot.missing img { display: none; }
+    .image-slot.missing::before {
+      content: attr(data-label);
+      position: absolute;
+      inset: 28px;
+      display: grid;
+      place-items: center;
+      padding: 26px;
+      text-align: center;
+      color: #345071;
+      font-size: 15px;
+      font-weight: 800;
+      border: 1px dashed #9eb5d2;
+      background: rgba(255,255,255,.58);
+    }
+    .image-slot.missing::after {
+      content: "";
+      position: absolute;
+      left: 14%;
+      right: 14%;
+      bottom: 22%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(6,36,74,.22), transparent);
+    }
+
+    .capability-strip {
+      background: rgba(247,250,254,.96);
+      border-bottom: 1px solid var(--line);
+    }
+    .capability-row {
+      min-height: 72px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      align-items: center;
+    }
+    .cap-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      min-height: 42px;
+      color: #233b5f;
+      font-size: 13px;
+      font-weight: 750;
+      border-right: 1px solid var(--line);
+    }
+    .cap-item:last-child { border-right: 0; }
+    .mini-icon { width: 25px; height: 25px; color: #385a84; }
+
+    .buyer-bar {
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(180deg, #fff 0%, #f9fbff 100%);
+    }
+    .buyer-inner {
+      display: flex;
+      flex-direction: column;
+      gap: 34px;
+      padding: 28px 0 34px;
+    }
+    .buyer-title {
+      position: relative;
+      align-self: center;
+      display: inline-flex;
+      align-items: center;
+      color: var(--blue);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .24em;
+      text-transform: uppercase;
+    }
+    .buyer-title::before,
+    .buyer-title::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 128px;
+      height: 1px;
+      background: #cfe0f5;
+    }
+    .buyer-title::before { right: calc(100% + 18px); }
+    .buyer-title::after { left: calc(100% + 18px); }
+    .buyer-links {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 0;
+      width: 100%;
+    }
+    .buyer-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 14px;
+      min-height: 62px;
+      color: #142d50;
+      font-size: 14px;
+      font-weight: 800;
+      border-right: 1px solid var(--line);
+    }
+    .buyer-link:last-child { border-right: 0; }
+
+    .section { padding: 82px 0; }
+    .section-soft { background: linear-gradient(180deg, #f8fbff 0%, #fff 100%); }
+    .manufacturer-block {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 56px;
+      align-items: start;
+    }
+    .section-lead {
+      max-width: 600px;
+      color: #52647b;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+    .advantage-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1px;
+      border: 1px solid var(--line);
+      background: var(--line);
+    }
+    .advantage-item {
+      min-height: 168px;
+      padding: 24px;
+      background: #fff;
+    }
+    .advantage-item small {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 12px;
+      color: var(--blue);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+    .advantage-item small::before {
+      content: "";
+      width: 18px;
+      height: 2px;
+      background: var(--blue);
+      flex: 0 0 18px;
+    }
+    .advantage-item h3 {
+      margin: 0 0 10px;
+      color: var(--navy);
+      font-size: 19px;
+      line-height: 1.18;
+    }
+    .advantage-item p {
+      margin: 0;
+      color: #53667e;
+      font-size: 14px;
+      line-height: 1.58;
+    }
+    .product-map {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      border-top: 1px solid var(--line);
+      border-left: 1px solid var(--line);
+      background: #fff;
+    }
+    .product-map-item {
+      padding: 22px 24px;
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+    .product-map-item h3 {
+      margin: 0 0 8px;
+      color: var(--navy);
+      font-size: 18px;
+      line-height: 1.2;
+    }
+    .product-map-item p {
+      margin: 0;
+      color: #53667e;
+      font-size: 14px;
+      line-height: 1.55;
+    }
+    .overview {
+      display: grid;
+      grid-template-columns: 52% 48%;
+      align-items: stretch;
+      border-bottom: 1px solid var(--line);
+    }
+    .overview .image-slot {
+      min-height: 420px;
+      border-left: 0;
+      border-right: 1px solid var(--line);
+      border-top: 0;
+      border-bottom: 0;
+    }
+    .overview-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 84px 9vw 84px 76px;
+    }
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      width: auto;
+      max-width: 100%;
+      margin-bottom: 20px;
+      color: var(--blue);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .22em;
+      line-height: 1.45;
+      white-space: normal;
+      text-transform: uppercase;
+    }
+    .kicker::before {
+      content: "";
+      width: 24px;
+      height: 2px;
+      background: var(--blue);
+      flex: 0 0 24px;
+    }
+    .kicker.center-title {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      width: 100%;
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+    .kicker.center-title::before,
+    .kicker.center-title::after {
+      content: "";
+      width: 96px;
+      height: 1px;
+      background: #cfe0f5;
+      flex: 0 1 96px;
+    }
+    h2 {
+      margin: 0 0 18px;
+      color: var(--navy);
+      font-size: clamp(27px, 2.35vw, 38px);
+      line-height: 1.12;
+      letter-spacing: 0;
+    }
+    .section-copy {
+      margin: 0;
+      color: #52647b;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 26px 0 24px;
+    }
+    .tag {
+      padding: 9px 16px;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      color: #24405f;
+      background: rgba(255,255,255,.74);
+      font-size: 13px;
+      font-weight: 750;
+    }
+    .text-link {
+      color: var(--blue);
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .center-title { text-align: center; margin-bottom: 32px; }
+    .solutions {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 22px;
+    }
+    .solution {
+      overflow: hidden;
+      background: #fff;
+      border: 1px solid var(--line);
+    }
+    .solution .image-slot { min-height: 210px; border: 0; border-bottom: 1px solid var(--line); }
+    .solution.featured .image-slot { min-height: 260px; }
+    .solution-body { padding: 22px 28px 26px; }
+    .solution h3 {
+      margin: 0 0 10px;
+      color: var(--navy);
+      font-size: 21px;
+      line-height: 1.16;
+    }
+    .solution:not(.featured) h3 { font-size: 19px; }
+    .solution p {
+      margin: 0 0 18px;
+      color: #53667e;
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    .qc-block {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 34px;
+      align-items: center;
+    }
+    .qc-block .image-slot { height: 320px; min-height: 320px; border-radius: 6px; box-shadow: var(--shadow); }
+    .timeline {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 18px;
+      margin-top: 38px;
+    }
+    .step {
+      position: relative;
+      display: grid;
+      gap: 14px;
+      align-content: start;
+      padding-top: 2px;
+      text-align: center;
+    }
+    .step:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      top: 17px;
+      left: calc(50% + 24px);
+      right: calc(-50% + 24px);
+      height: 1px;
+      background: #c9d9ee;
+    }
+    .step-mark {
+      position: relative;
+      z-index: 1;
+      width: 36px;
+      height: 36px;
+      display: grid;
+      place-items: center;
+      justify-self: center;
+      border: 4px solid #f7fbff;
+      border-radius: 50%;
+      color: #fff;
+      background: var(--blue);
+      box-shadow: 0 0 0 1px #b8c9df;
+      font-size: 12px;
+      font-weight: 850;
+      line-height: 1;
+    }
+    .step-title {
+      color: var(--navy);
+      font-size: 15px;
+      font-weight: 800;
+      line-height: 1.25;
+    }
+    .step-desc {
+      color: #687b92;
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .spec-rfq-row {
+      display: grid;
+      grid-template-columns: 1fr 1.05fr;
+      gap: 46px;
+      align-items: stretch;
+    }
+    .spec-table {
+      width: 100%;
+      border-collapse: collapse;
+      border-top: 1px solid var(--line);
+      font-size: 13px;
+      background: #fff;
+    }
+    .spec-table th,
+    .spec-table td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+    .spec-table th {
+      width: 34%;
+      color: #203d60;
+      background: #f7fbff;
+      font-weight: 800;
+    }
+    .quote-teaser {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: #fff;
+      min-height: 265px;
+    }
+    .quote-teaser-copy { padding: 34px 30px; }
+    .quote-teaser ul {
+      margin: 18px 0 0;
+      padding: 0;
+      list-style: none;
+      color: #52647b;
+      font-size: 13px;
+      line-height: 1.9;
+    }
+    .quote-teaser li::before { content: "✓"; color: var(--blue); margin-right: 10px; font-weight: 800; }
+    .quote-teaser .image-slot { min-height: 100%; border: 0; border-left: 1px solid var(--line); }
+
+    .rfq-layout {
+      display: grid;
+      grid-template-columns: 43% 57%;
+      border-top: 1px solid var(--line);
+      background: #fff;
+    }
+    .rfq-layout .image-slot {
+      min-height: 420px;
+      border: 0;
+      border-right: 1px solid var(--line);
+    }
+    .rfq-panel { padding: 48px 54px 52px; }
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px 18px;
+    }
+    .form-group.full { grid-column: 1 / -1; }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      color: #183556;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    input, select, textarea {
+      width: 100%;
+      min-height: 42px;
+      padding: 10px 12px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      color: var(--ink);
+      background: #fff;
+      font: inherit;
+      font-size: 13px;
+    }
+    textarea { min-height: 84px; resize: vertical; }
+    .submit { width: 100%; margin-top: 18px; border-radius: 6px; }
+    .form-status {
+      margin: 12px 0 0;
+      color: #36506f;
+      font-size: 13px;
+      line-height: 1.55;
+    }
+    .form-status a {
+      color: var(--blue);
+      font-weight: 800;
+    }
+    .form-status.is-error { color: #9b2734; }
+
+    .footer {
+      color: #dbe8f7;
+      background: linear-gradient(135deg, #08264d, #041b38);
+      padding: 48px 0 30px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr repeat(4, 1fr);
+      gap: 36px;
+    }
+    .footer-brand {
+      color: #fff;
+      font-size: 24px;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+    .footer p,
+    .footer a,
+    .footer li {
+      color: #c3d2e4;
+      font-size: 13px;
+      line-height: 1.7;
+    }
+    .footer h4 {
+      margin: 0 0 14px;
+      color: #fff;
+      font-size: 14px;
+    }
+    .footer ul { margin: 0; padding: 0; list-style: none; }
+    .copyright {
+      margin-top: 34px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,.14);
+      color: #8ea6c2;
+      font-size: 12px;
+      text-align: center;
+    }
+
+    @media (max-width: 1100px) {
+      .nav { grid-template-columns: 1fr auto; }
+      .nav-toggle { display: inline-flex; justify-self: end; }
+      .nav-links,
+      .nav-actions {
+        display: none;
+      }
+      .nav.is-open .nav-links,
+      .nav.is-open .nav-actions {
+        display: grid;
+        grid-column: 1 / -1;
+        width: 100%;
+      }
+      .nav.is-open .nav-links {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+        padding: 4px 0 6px;
+      }
+      .nav.is-open .nav-links a {
+        padding: 12px 0;
+        border-bottom: 1px solid var(--line);
+      }
+      .nav.is-open .nav-links a.active::after { display: none; }
+      .nav.is-open .nav-actions {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+        padding-bottom: 14px;
+      }
+      .hero-grid, .overview, .qc-block, .rfq-layout, .spec-rfq-row, .manufacturer-block { grid-template-columns: 1fr; }
+      .hero-visual {
+        position: relative;
+        inset: auto;
+        min-height: 360px;
+        pointer-events: auto;
+      }
+      .hero-visual::before { display: none; }
+      .hero-visual .image-slot {
+        min-height: 360px;
+        height: auto;
+      }
+      .overview-text { padding: 44px 36px; }
+      .product-map { grid-template-columns: repeat(2, 1fr); }
+      .solutions { grid-template-columns: 1fr; }
+      .timeline { grid-template-columns: repeat(3, 1fr); gap: 24px 18px; }
+      .step::after { display: none; }
+      .footer-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 720px) {
+      .container { width: min(100% - 32px, 1400px); }
+      .nav { height: auto; min-height: 68px; grid-template-columns: 1fr auto; padding: 12px 0; }
+      .nav.is-open .nav-links,
+      .nav.is-open .nav-actions {
+        grid-template-columns: 1fr;
+      }
+      h1 { font-size: 36px; }
+      .hero-grid {
+        min-height: auto;
+        gap: 24px;
+        padding: 30px 0 42px;
+      }
+      .hero-grid > div:first-child { display: contents; }
+      .hero h1 { order: 1; }
+      .hero-copy {
+        order: 2;
+        margin: 18px 0 0;
+        font-size: 16px;
+        line-height: 1.58;
+      }
+      .hero-ctas { order: 3; margin: 0; }
+      .hero-visual { order: 4; min-height: 240px; }
+      .hero-visual .image-slot { min-height: 240px; }
+      .trust-points {
+        order: 5;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px 14px;
+      }
+      .trust-point {
+        grid-template-columns: 28px 1fr;
+        font-size: 12px;
+      }
+      .icon { width: 28px; height: 28px; }
+      .section { padding: 58px 0; }
+      .buyer-inner { gap: 18px; padding: 28px 0 30px; }
+      .buyer-title { max-width: 100%; justify-content: center; text-align: center; line-height: 1.45; }
+      .kicker { letter-spacing: .14em; }
+      .kicker::before { width: 18px; flex-basis: 18px; }
+      .kicker.center-title::before, .kicker.center-title::after { display: none; }
+      .kicker.center-title { line-height: 1.45; }
+      .hero-ctas, .capability-row, .buyer-links, .form-grid { grid-template-columns: 1fr; display: grid; }
+      .hero-ctas { display: flex; flex-wrap: wrap; }
+      .advantage-grid, .product-map { grid-template-columns: 1fr; }
+      .cap-item, .buyer-link { border-right: 0; border-bottom: 1px solid var(--line); justify-content: flex-start; padding: 13px 0; }
+      .buyer-title::before, .buyer-title::after { display: none; }
+      .timeline { grid-template-columns: 1fr; gap: 22px; }
+      .qc-block .image-slot { height: 240px; min-height: 240px; }
+      .quote-teaser { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
-
-<!-- ╔══════════════════════════════════════════════╗
-     ║  HEADER                                      ║
-     ╚══════════════════════════════════════════════╝ -->
-<header>
-  <div class="container">
-    <nav class="header-nav">
-      <div class="logo"><a href="index.html">[BRAND_NAME]</a></div>
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="products/index.html">Products</a></li>
-        <li><a href="oem-odm.html">OEM/ODM</a></li>
-        <li><a href="factory-quality.html">Factory</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <div class="nav-cta">
-        <a href="contact.html" class="btn btn-primary v8-nav-quote">Contact Sales</a>
-        <a href="https://wa.me/[REPLACE_WITH_WHATSAPP_NUMBER]" class="btn btn-whatsapp whatsapp-btn" target="_blank">WhatsApp</a>
-        <div class="mobile-toggle">&#9776;</div>
-      </div>
-    </nav>
-  </div>
-</header>
-
-<!-- ╔══════════════════════════════════════════════╗
-     ║  HERO                                        ║
-     ║  Right image: hero-product-system.jpg        ║
-     ║  No model image in hero.                     ║
-     ╚══════════════════════════════════════════════╝ -->
-<section class="v8-hero">
-  <div class="v8-hero-inner container">
-
-    <div class="v8-hero-text">
-      <h1 class="v8-hero-h1">OEM/ODM Microneedling Tool Systems Manufacturer</h1>
-      <p class="v8-hero-sub">A specialized manufacturing partner for cosmetic-use microneedling pens, needle cartridges, applicator heads, crystal heads, private label packaging, and stable consumable supply.</p>
-      <div class="v8-hero-ctas">
-        <a href="#rfq" class="btn btn-primary">Request OEM/ODM Quote</a>
-        <a href="contact.html" class="btn v8-btn-ghost">Contact Sales</a>
-      </div>
-      <div class="v8-trust-bar">
-        <div class="v8-trust-item">
-          <svg class="v8-trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-          <span>Controlled Assembly</span>
-        </div>
-        <div class="v8-trust-item">
-          <svg class="v8-trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-          <span>Batch Inspection</span>
-        </div>
-        <div class="v8-trust-item">
-          <svg class="v8-trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
-          <span>Protective Packaging</span>
-        </div>
-        <div class="v8-trust-item">
-          <svg class="v8-trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-          <span>Export Documentation Support</span>
-        </div>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">Dermadream</a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primaryNav"><span></span><span></span><span></span><span class="sr-only">Menu</span></button>
+      <nav class="nav-links" id="primaryNav" aria-label="Main navigation">
+        <a class="active" href="index.html">Home</a>
+        <a href="products/index.html">Products</a>
+        <a href="oem-odm.html">OEM/ODM</a>
+        <a href="factory-quality.html">Factory</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-light" href="contact.html">Contact Sales</a>
+        <a class="btn btn-whatsapp" href="https://wa.me/8618998490241">WhatsApp</a>
       </div>
     </div>
+  </header>
 
-    <div class="v8-hero-img-wrap">
-      <!-- Replace with: assets/images/home/hero-product-system.jpg
-           Content: microneedling pen system, cartridges, heads, packaging on white/gray surface
-           No model image. -->
-      <img src="assets/images/home/hero-product-system.jpg"
-           alt="Microneedling pen system with needle cartridges, applicator heads, crystal heads, and private label packaging — cosmetic-use tool system"
-           loading="eager" class="v8-hero-img"/>
-    </div>
-
-  </div>
-</section>
-
-<!-- ╔══════════════════════════════════════════════╗
-     ║  BUYER PATH BAR                              ║
-     ╚══════════════════════════════════════════════╝ -->
-<nav class="v8-buyer-bar" aria-label="Find the right solution">
-  <div class="container v8-buyer-inner">
-    <span class="v8-buyer-label">FIND THE RIGHT SOLUTION</span>
-    <div class="v8-buyer-links">
-      <a href="#rfq" class="v8-buyer-link">
-        <svg class="v8-bicon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-        <span class="v8-bname">Beauty Brands</span>
-      </a>
-      <a href="#rfq" class="v8-buyer-link">
-        <svg class="v8-bicon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
-        <span class="v8-bname">Distributors &amp; Wholesalers</span>
-      </a>
-      <a href="#rfq" class="v8-buyer-link">
-        <svg class="v8-bicon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
-        <span class="v8-bname">E-commerce Sellers</span>
-      </a>
-      <a href="#rfq" class="v8-buyer-link">
-        <svg class="v8-bicon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
-        <span class="v8-bname">OEM/ODM Projects</span>
-      </a>
-      <a href="#rfq" class="v8-buyer-link">
-        <svg class="v8-bicon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
-        <span class="v8-bname">Consumable Reorders</span>
-      </a>
-    </div>
-  </div>
-</nav>
-
-<!-- ╔══════════════════════════════════════════════╗
-     ║  PRODUCT SYSTEM OVERVIEW                    ║
-     ║  Left image: product-system-overview.jpg     ║
-     ╚══════════════════════════════════════════════╝ -->
-<section class="v8-section v8-bg-soft">
-  <div class="container v8-overview-grid">
-
-    <div class="v8-overview-img-wrap">
-      <!-- Replace with: assets/images/home/product-system-overview.jpg
-           Content: needle cartridges set or full product system flat lay · No model -->
-      <img src="assets/images/home/product-system-overview.jpg"
-           alt="Complete cosmetic-use microneedling tool system — device platforms, needle cartridges, applicator heads, crystal heads"
-           loading="lazy" class="v8-overview-img"/>
-    </div>
-
-    <div class="v8-overview-text">
-      <div class="v8-kicker">PRODUCT SYSTEM OVERVIEW</div>
-      <h2 class="v8-h2">Complete Cosmetic-Use Microneedling Tool Systems</h2>
-      <p>We supply complete cosmetic-use microneedling tool systems — from the main device platform through every consumable cartridge and applicator head, to private label packaging and stable reorder programs.</p>
-      <div class="v8-tag-row">
-        <span class="v8-tag">Device Platforms</span>
-        <span class="v8-tag">Needle Cartridges</span>
-        <span class="v8-tag">Applicator Heads</span>
-        <span class="v8-tag">Crystal Heads</span>
-        <span class="v8-tag">Private Label Packaging</span>
-        <span class="v8-tag">Consumable Supply</span>
-      </div>
-      <a href="products/index.html" class="v8-text-link">Explore the Full Product Range &rarr;</a>
-    </div>
-
-  </div>
-</section>
-
-<!-- ╔══════════════════════════════════════════════╗
-     ║  FEATURED SOLUTIONS                          ║
-     ║  f20-m30-application.jpg  (scene ok)         ║
-     ║  nk3-ultra-closeup.jpg    (product only)     ║
-     ║  nh4-application.jpg      (scene ok)         ║
-     ╚══════════════════════════════════════════════╝ -->
-<section class="v8-section">
-  <div class="container">
-    <div class="v8-kicker" style="text-align:center">FEATURED MICRONEEDLING TOOL SOLUTIONS</div>
-
-    <div class="v8-solutions-grid">
-
-      <div class="v8-sol-card">
-        <div class="v8-sol-img">
-          <!-- Replace with: assets/images/home/f20-m30-application.jpg
-               Content: F20/M30 pen — application scene or product photo
-               No before/after · Cosmetic-use only -->
-          <img src="assets/images/home/f20-m30-application.jpg"
-               alt="F20 / M30 microneedling pen system — cosmetic-use device"
-               loading="lazy"/>
-        </div>
-        <div class="v8-sol-body">
-          <h3>F20 / M30 Pen Systems</h3>
-          <p>Precise, adjustable pen platforms for OEM/ODM branding and distributor supply programs.</p>
-          <a href="#rfq" class="v8-text-link">View Details &rarr;</a>
-        </div>
-      </div>
-
-      <div class="v8-sol-card">
-        <div class="v8-sol-img">
-          <!-- Replace with: assets/images/home/nk3-ultra-closeup.jpg
-               Content: NK3 wide-area stamp cartridge — macro close-up · Product only, no model -->
-          <img src="assets/images/home/nk3-ultra-closeup.jpg"
-               alt="NK3 Ultra wide-area stamp cartridge — cosmetic-use accessory close-up"
-               loading="lazy"/>
-        </div>
-        <div class="v8-sol-body">
-          <h3>NK3 Ultra Wide-area Stamp Cartridges</h3>
-          <p>High-coverage cartridge design for wholesale programs and SKU expansion.</p>
-          <a href="#rfq" class="v8-text-link">View Details &rarr;</a>
-        </div>
-      </div>
-
-      <div class="v8-sol-card">
-        <div class="v8-sol-img">
-          <!-- Replace with: assets/images/home/nh4-application.jpg
-               Content: NH4 reservoir applicator head — application scene or product photo
-               No before/after · Cosmetic-use only -->
-          <img src="assets/images/home/nh4-application.jpg"
-               alt="NH4 reservoir applicator head — cosmetic-use accessory"
-               loading="lazy"/>
-        </div>
-        <div class="v8-sol-body">
-          <h3>NH4 Reservoir Applicator Heads</h3>
-          <p>Reservoir applicator heads for cosmetic-use surface application and accessory bundles.</p>
-          <a href="#rfq" class="v8-text-link">View Details &rarr;</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ╔══════════════════════════════════════════════╗
-     ║  CONTROLLED PRODUCTION & QC                 ║
-     ║  Left image: qc-production.jpg              ║
-     ╚══════════════════════════════════════════════╝ -->
-<section class="v8-section v8-bg-soft">
-  <div class="container">
-    <div class="v8-qc-layout">
-
-      <div class="v8-qc-img-wrap">
-        <!-- Replace with: assets/images/home/qc-production.jpg
-             Content: controlled assembly or QC inspection environment
-             Not a medical setting · Gloved hands preferred -->
-        <img src="assets/images/home/qc-production.jpg"
-             alt="Controlled assembly and production quality inspection — cosmetic-use tool manufacturing"
-             loading="lazy" class="v8-qc-img"/>
-      </div>
-
-      <div class="v8-qc-text">
-        <div class="v8-kicker">CONTROLLED PRODUCTION &amp; QUALITY PROCESS</div>
-        <h2 class="v8-h2">Consistent Quality.<br>Reliable Supply.</h2>
-        <p>A disciplined production and quality system ensures every order meets the standards your brand expects — from incoming material review through controlled assembly, inspection, protective packaging, and export documentation support.</p>
-
-        <div class="v8-timeline">
-          <div class="v8-tstep">
-            <div class="v8-ticon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
-            <div class="v8-tlabel">Raw Material<br>Selection</div>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>OEM/ODM Microneedling Tool Systems Manufacturer</h1>
+          <p class="hero-copy">Direct manufacturer support for cosmetic-use microneedling tool systems, with in-house assembly, batch inspection, device and consumable matching, private label packaging, and reorder supply planning.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#rfq">Request OEM/ODM Quote →</a>
+            <a class="btn btn-light" href="contact.html">Contact Sales</a>
           </div>
-          <div class="v8-tarrow">&rarr;</div>
-          <div class="v8-tstep">
-            <div class="v8-ticon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg></div>
-            <div class="v8-tlabel">Precision<br>Manufacturing</div>
+          <div class="trust-points">
+            <div class="trust-point"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-5"/></svg><span>In-house<br>Assembly</span></div>
+            <div class="trust-point"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg><span>Batch<br>Inspection</span></div>
+            <div class="trust-point"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 16V8l-9-5-9 5v8l9 5 9-5z"/><path d="M3.3 7.5 12 12l8.7-4.5M12 22V12"/></svg><span>Private Label<br>Packaging</span></div>
+            <div class="trust-point"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h8"/></svg><span>Reorder Supply<br>Support</span></div>
           </div>
-          <div class="v8-tarrow">&rarr;</div>
-          <div class="v8-tstep">
-            <div class="v8-ticon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div>
-            <div class="v8-tlabel">In-Process<br>Inspection</div>
-          </div>
-          <div class="v8-tarrow">&rarr;</div>
-          <div class="v8-tstep">
-            <div class="v8-ticon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="20 6 9 17 4 12"/></svg></div>
-            <div class="v8-tlabel">Final Quality<br>Inspection</div>
-          </div>
-          <div class="v8-tarrow">&rarr;</div>
-          <div class="v8-tstep">
-            <div class="v8-ticon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div>
-            <div class="v8-tlabel">Protective<br>Packaging</div>
-          </div>
-          <div class="v8-tarrow">&rarr;</div>
-          <div class="v8-tstep">
-            <div class="v8-ticon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
-            <div class="v8-tlabel">Export<br>Documentation</div>
+        </div>
+        <div class="hero-visual">
+          <div class="image-slot" data-label="assets/images/home/hero-product-system.jpg">
+            <img src="assets/images/home/hero-product-system.jpg" alt="Product system visual">
           </div>
         </div>
       </div>
+    </section>
 
-    </div>
-  </div>
-</section>
-
-<!-- ╔══════════════════════════════════════════════╗
-     ║  TECHNICAL SPECIFICATION PREVIEW            ║
-     ║  Right image: product-spec-preview.jpg       ║
-     ╚══════════════════════════════════════════════╝ -->
-<section class="v8-section">
-  <div class="container">
-    <div class="v8-kicker">TECHNICAL SPECIFICATION PREVIEW</div>
-    <div class="v8-spec-layout">
-
-      <div class="v8-spec-table-wrap">
-        <table class="v8-spec-table">
-          <tbody>
-            <tr>
-              <th>Needle material</th>
-              <td>Stainless steel needle options</td>
-            </tr>
-            <tr>
-              <th>Cartridge types</th>
-              <td>Round / Nano / Stamp / Ultra Wide-area</td>
-            </tr>
-            <tr>
-              <th>Packaging</th>
-              <td>Bulk / Private Label / Protective Packaging</td>
-            </tr>
-            <tr>
-              <th>Custom options</th>
-              <td>Logo / Color / Manual / Box / Kit</td>
-            </tr>
-            <tr>
-              <th>Documentation</th>
-              <td>Available according to product type and project requirements</td>
-            </tr>
-          </tbody>
-        </table>
+    <section class="capability-strip">
+      <div class="container capability-row">
+        <div class="cap-item"><svg class="mini-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Manufacturer Project Support</div>
+        <div class="cap-item"><svg class="mini-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.2 4.2l2.8 2.8M17 17l2.8 2.8M1 12h4M19 12h4"/></svg>Standardized Production Process</div>
+        <div class="cap-item"><svg class="mini-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-8h6v8"/></svg>Device & Consumable Matching</div>
+        <div class="cap-item"><svg class="mini-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 0 20M12 2a15.3 15.3 0 0 0 0 20"/></svg>Global Shipping Support</div>
       </div>
+    </section>
 
-      <div class="v8-spec-img-wrap">
-        <!-- Replace with: assets/images/home/product-spec-preview.jpg
-             Content: cartridge set or device product photo · Studio style · No model -->
-        <img src="assets/images/home/product-spec-preview.jpg"
-             alt="Microneedling tool system cartridge and device specification preview"
-             loading="lazy" class="v8-spec-img"/>
+    <section class="buyer-bar">
+      <div class="container buyer-inner">
+        <div class="buyer-title">Find The Right Solution</div>
+        <div class="buyer-links">
+          <a class="buyer-link" href="#rfq"><svg class="mini-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 2h8M10 2v6l-5 9a3 3 0 0 0 2.6 5h8.8a3 3 0 0 0 2.6-5l-5-9V2"/></svg>Beauty Brands</a>
+          <a class="buyer-link" href="#rfq"><svg class="mini-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 21V7l6-4 6 4v14M15 9h6v12M7 10h2M7 14h2M11 10h2M11 14h2"/></svg>Distributors &amp; Wholesalers</a>
+          <a class="buyer-link" href="#rfq"><svg class="mini-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39h11.72L23 6H6"/></svg>E-commerce Sellers</a>
+          <a class="buyer-link" href="#rfq"><svg class="mini-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="m14.7 6.3 3 3L7 20l-4 1 1-4L14.7 6.3zM16 5l3 3"/></svg>OEM/ODM Projects</a>
+          <a class="buyer-link" href="#rfq"><svg class="mini-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M23 4v6h-6M1 20v-6h6"/><path d="M3.5 9a9 9 0 0 1 14.8-3.4L23 10M1 14l4.7 4.4A9 9 0 0 0 20.5 15"/></svg>Consumable Reorders</a>
+        </div>
       </div>
+    </section>
 
-    </div>
-  </div>
-</section>
+    <section class="section section-soft">
+      <div class="container manufacturer-block">
+        <div>
+          <div class="kicker">Manufacturer Advantage</div>
+          <h2>Why Work With Dermadream as a Manufacturer</h2>
+          <p class="section-lead">For B2B buyers, the value is not only product selection. It is the ability to coordinate product matching, private label packaging, batch inspection, and reorder supply through one manufacturing partner.</p>
+        </div>
+        <div class="advantage-grid">
+          <div class="advantage-item"><small>01 Source Support</small><h3>Direct Manufacturer Communication</h3><p>Discuss product scope, customization needs, packaging direction, and order planning with a production-side partner.</p></div>
+          <div class="advantage-item"><small>02 System Matching</small><h3>Device + Consumable Planning</h3><p>Plan pens, cartridges, applicator heads, and compatible reorder items as one connected product system.</p></div>
+          <div class="advantage-item"><small>03 Brand Build</small><h3>Private Label Packaging Coordination</h3><p>Coordinate logo, color, box, manual, insert tray, kit combination, and protective packaging before batch order.</p></div>
+          <div class="advantage-item"><small>04 Supply Continuity</small><h3>Sample, Batch, and Reorder Support</h3><p>Move from sample review to batch order and repeat consumable supply with clearer project checkpoints.</p></div>
+        </div>
+      </div>
+    </section>
 
-<!-- ╔══════════════════════════════════════════════╗
-     ║  RFQ                                         ║
-     ║  Left image: oem-starter-kit.jpg            ║
-     ║  No model image.                             ║
-     ╚══════════════════════════════════════════════╝ -->
-<section class="v8-section v8-bg-soft" id="rfq">
-  <div class="container v8-rfq-layout">
+    <section class="overview">
+      <div class="image-slot" data-label="assets/images/home/product-system-overview.jpg">
+        <img src="assets/images/home/product-system-overview.jpg" alt="Product system overview">
+      </div>
+      <div class="overview-text">
+        <div class="kicker">Product System Overview</div>
+        <h2>Complete Cosmetic-Use Microneedling Tool Systems</h2>
+        <p class="section-copy">A coordinated product system for buyers who need device systems, compatible consumables, applicator heads, private label starter kits, and reorder supply planning.</p>
+        <div class="tag-row">
+          <span class="tag">Microneedling Device Systems</span>
+          <span class="tag">Microneedling Needle Cartridges</span>
+          <span class="tag">Standalone Applicator Tools</span>
+          <span class="tag">Crystal / Nano / Silicone Head Options</span>
+          <span class="tag">Derma Rollers &amp; Multi-Head Tools</span>
+          <span class="tag">Private Label Starter Kits</span>
+        </div>
+        <a class="text-link" href="products/index.html">View All Product Range →</a>
+      </div>
+    </section>
 
-    <div class="v8-rfq-img-wrap">
-      <!-- Replace with: assets/images/home/oem-starter-kit.jpg
-           Content: OEM/ODM starter kit — device, cartridges, packaging box, manual
-           No model image. Studio product photo. -->
-      <img src="assets/images/home/oem-starter-kit.jpg"
-           alt="OEM/ODM private label cosmetic-use microneedling tool starter kit — device, cartridges, packaging, manual"
-           loading="lazy" class="v8-rfq-img"/>
-    </div>
+    <section class="section">
+      <div class="container">
+        <div class="kicker center-title">Product Systems Built Around B2B Supply</div>
+        <div class="product-map">
+            <div class="product-map-item"><h3>Microneedling Device Systems</h3><p>Pen system selection for brand programs, distributor SKUs, and OEM/ODM kit planning that needs a consistent cosmetic-use tool foundation.</p><a class="text-link" href="products/device-platforms.html">Learn more &rarr;</a></div>
+          <div class="product-map-item"><h3>Microneedling Needle Cartridges</h3><p>Machine-compatible replacement cartridges for matching device systems and repeat reorder supply.</p><a class="text-link" href="products/needle-cartridges.html">Learn more &rarr;</a></div>
+          <div class="product-map-item"><h3>Standalone Applicator Tools</h3><p>Stamp, reservoir, ampoule-style, serum / liquid applicator tools for standalone product lines.</p><a class="text-link" href="products/applicator-heads.html">Learn more &rarr;</a></div>
+          <div class="product-map-item"><h3>Crystal / Nano / Silicone Heads</h3><p>Head options for buyers planning a wider cosmetic-use accessory range.</p><a class="text-link" href="products/nano-silicone-crystal-heads.html">Learn more &rarr;</a></div>
+          <div class="product-map-item"><h3>Derma Rollers &amp; Multi-Head Tools</h3><p>N in 1 systems, derma rollers, ice rollers, and manual tools for broader catalog programs.</p><a class="text-link" href="products/derma-rollers-multi-head-tools.html">Learn more &rarr;</a></div>
+          <div class="product-map-item"><h3>Private Label Starter Kits</h3><p>Device, cartridges, accessories, manual, tray, box, and protective packing coordination.</p><a class="text-link" href="private-label-packaging.html">Learn more &rarr;</a></div>
+        </div>
+      </div>
+    </section>
 
-    <div class="v8-rfq-form-wrap">
-      <h2 class="v8-h2">Request a B2B Quote</h2>
-      <p class="v8-rfq-intro">Tell us about your project and our team will respond with a tailored solution.</p>
+    <section class="section">
+      <div class="container">
+        <div class="kicker center-title">Featured Microneedling Tool Solutions</div>
+        <div class="solutions">
+          <article class="solution featured">
+            <div class="image-slot" data-label="assets/images/home/f20-m30-application.jpg"><img src="assets/images/home/f20-m30-application.jpg" alt="F20 M30 pen systems"></div>
+            <div class="solution-body">
+              <h3>F20 / M30 Pen Systems</h3>
+              <p>Configurable pen systems for brand, distributor, and reorder programs.</p>
+              <a class="text-link" href="products/device-platforms.html">Learn more →</a>
+            </div>
+          </article>
+          <article class="solution">
+            <div class="image-slot" data-label="assets/images/home/nk3-ultra-closeup.jpg"><img src="assets/images/home/nk3-ultra-closeup.jpg" alt="NK3 Ultra stamp cartridges"></div>
+            <div class="solution-body">
+              <h3>NK3 Ultra Wide-area Stamp Cartridges</h3>
+              <p>Wide-area cartridge option for buyers planning cartridge variety and reorder supply.</p>
+              <a class="text-link" href="products/needle-cartridges.html">Learn more →</a>
+            </div>
+          </article>
+          <article class="solution">
+            <div class="image-slot" data-label="assets/images/home/nh4-application.jpg"><img src="assets/images/home/nh4-application.jpg" alt="NH4 reservoir applicator heads"></div>
+            <div class="solution-body">
+              <h3>NH4 Reservoir Applicator Tools</h3>
+              <p>Standalone reservoir applicator tools for cosmetic-use accessory bundles and brand kits.</p>
+              <a class="text-link" href="products/applicator-heads.html">Learn more →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-      <div class="rfq-form-container">
-        <form id="rfqForm">
+    <section class="section section-soft">
+      <div class="container qc-block">
+        <div>
+          <div class="kicker">Controlled Production &amp; Quality Process</div>
+          <div class="image-slot" data-label="assets/images/home/qc-production.jpg"><img src="assets/images/home/qc-production.jpg" alt="Controlled production and QC"></div>
+        </div>
+        <div class="timeline">
+          <div class="step"><div class="step-mark">01</div><div class="step-title">Incoming Material Check</div><div class="step-desc">Component and packaging review</div></div>
+          <div class="step"><div class="step-mark">02</div><div class="step-title">Controlled Assembly</div><div class="step-desc">Assembly steps by product type</div></div>
+          <div class="step"><div class="step-mark">03</div><div class="step-title">In-Process Inspection</div><div class="step-desc">Visual and assembly checks</div></div>
+          <div class="step"><div class="step-mark">04</div><div class="step-title">Final Quality Review</div><div class="step-desc">Batch review before packing</div></div>
+          <div class="step"><div class="step-mark">05</div><div class="step-title">Protective Packaging</div><div class="step-desc">Kit, box, and carton review</div></div>
+          <div class="step"><div class="step-mark">06</div><div class="step-title">Shipment Documentation</div><div class="step-desc">Support by project requirements</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container spec-rfq-row">
+        <div>
+          <div class="kicker">Technical Specification Preview</div>
+          <table class="spec-table">
+            <tr><th>Needle Material</th><td>Stainless Steel</td></tr>
+            <tr><th>Needle Diameter</th><td>0.18 mm / 0.20 mm / 0.25 mm Optional</td></tr>
+            <tr><th>Needle Length</th><td>0.25 mm - 3.0 mm Customizable</td></tr>
+            <tr><th>Cartridge Types</th><td>Round / Nano / Stamp / Ultra Wide-area</td></tr>
+            <tr><th>Assembly Support</th><td>Controlled assembly and batch inspection planning</td></tr>
+            <tr><th>Documentation</th><td>Available according to product type and project requirements</td></tr>
+            <tr><th>Customization</th><td>Logo / Color / Manual / Box / Kit</td></tr>
+          </table>
+        </div>
+        <aside class="quote-teaser">
+          <div class="quote-teaser-copy">
+            <div class="kicker">Ready To Build Your Brand?</div>
+            <h2 style="font-size:26px">Request an OEM/ODM Quote</h2>
+            <p class="section-copy">Tell us about your project so the right product system, packaging scope, and reorder path can be reviewed.</p>
+            <ul>
+              <li>Product system and compatible consumable planning</li>
+              <li>Private label packaging and branding scope</li>
+              <li>Sample, batch order, and reorder supply planning</li>
+              <li>Shipment documentation support by project requirements</li>
+            </ul>
+          </div>
+          <div class="image-slot" data-label="assets/images/home/product-spec-preview.jpg"><img src="assets/images/home/product-spec-preview.jpg" alt="Product spec preview"></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="rfq-layout" id="rfq">
+      <div class="image-slot" data-label="assets/images/home/oem-starter-kit.jpg"><img src="assets/images/home/oem-starter-kit.jpg" alt="OEM starter kit"></div>
+      <div class="rfq-panel">
+        <div class="kicker">Request A B2B Quote</div>
+        <form id="rfqForm" class="rfq-form" novalidate>
           <div class="form-grid">
-            <div class="form-group">
-              <label for="name">Full Name *</label>
-              <input type="text" id="name" name="name" required placeholder="Your name"/>
-            </div>
-            <div class="form-group">
-              <label for="jobtitle">Job Title</label>
-              <input type="text" id="jobtitle" name="jobtitle" placeholder="Your job title"/>
-            </div>
-            <div class="form-group">
-              <label for="email">Business Email *</label>
-              <input type="email" id="email" name="email" required placeholder="name@company.com"/>
-            </div>
-            <div class="form-group">
-              <label for="phone">WhatsApp / Phone</label>
-              <input type="text" id="phone" name="phone" placeholder="Your WhatsApp / phone"/>
-            </div>
-            <div class="form-group">
-              <label for="company">Company Name *</label>
-              <input type="text" id="company" name="company" required placeholder="Your company"/>
-            </div>
-            <div class="form-group">
-              <label for="market">Country / Region</label>
-              <select id="market" name="market">
-                <option value="">Please select</option>
-                <option>United States</option>
-                <option>United Kingdom</option>
-                <option>Germany</option>
-                <option>France</option>
-                <option>Australia</option>
-                <option>Canada</option>
-                <option>Other</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="product">Project Type</label>
-              <select id="product" name="product">
-                <option value="">Please select</option>
-                <option value="pen">Microneedling Pen Systems</option>
-                <option value="cartridges">Needle Cartridges</option>
-                <option value="stamp">Wide-area Stamp Cartridges</option>
-                <option value="reservoir">Reservoir Applicator Heads</option>
-                <option value="nano">Nano / Silicone Crystal Heads</option>
-                <option value="oem">Full OEM/ODM Project</option>
-              </select>
-            </div>
-            <div class="form-group full">
-              <label for="message">Additional Information</label>
-              <textarea id="message" name="message" rows="4" placeholder="Tell us about your needs..."></textarea>
-            </div>
+            <div class="form-group"><label for="name">Full Name *</label><input id="name" name="name" placeholder="Your name" required></div>
+            <div class="form-group"><label for="jobtitle">Job Title</label><input id="jobtitle" name="jobtitle" placeholder="Your role"></div>
+            <div class="form-group"><label for="company">Company Name *</label><input id="company" name="company" placeholder="Your company" required></div>
+            <div class="form-group"><label for="phone">WhatsApp / Phone</label><input id="phone" name="phone" placeholder="Your WhatsApp / phone"></div>
+            <div class="form-group"><label for="email">Business Email *</label><input id="email" name="email" type="email" placeholder="name@company.com" required></div>
+            <div class="form-group"><label for="region">Country / Region</label><input id="region" name="region" placeholder="Destination or target market"></div>
+            <div class="form-group"><label for="product">Products of Interest</label><select id="product" name="product"><option>Please select</option><option>Microneedling Device Systems</option><option>Microneedling Needle Cartridges</option><option>Standalone Applicator Tools</option><option>Crystal / Nano / Silicone Head Options</option><option>Derma Rollers & Multi-Head Tools</option><option>Private Label Packaging & Starter Kits</option><option>OEM/ODM Product Line Solutions</option><option>Not Sure Yet</option></select></div>
+            <div class="form-group"><label for="model">Interested Model</label><input id="model" name="model" placeholder="F20, M30, NK3 Ultra, NH4, etc."></div>
+            <div class="form-group"><label for="market">Project Type</label><select id="market" name="market"><option>Please select</option><option>Beauty Brand</option><option>Distributor / Wholesaler</option><option>E-commerce Seller</option><option>Private Label Project</option><option>Consumable Reorder</option></select></div>
+            <div class="form-group"><label for="quantity">Estimated Order Quantity</label><select id="quantity" name="quantity"><option>Please select</option><option>Sample order</option><option>Small batch</option><option>Batch order</option><option>Reorder supply</option><option>To be confirmed</option></select></div>
+            <div class="form-group"><label for="privateLabel">Private Label Need</label><select id="privateLabel" name="privateLabel"><option>Please select</option><option>Logo customization</option><option>Color customization</option><option>Packaging box</option><option>User manual / insert</option><option>Tray / inner support</option><option>Starter kit / bundle</option><option>No private label needed yet</option><option>Not sure yet</option></select></div>
+            <div class="form-group"><label for="packaging">Packaging Need</label><select id="packaging" name="packaging"><option>Please select</option><option>Bulk packaging</option><option>Sticker / simple label</option><option>Logo printing on box</option><option>Full custom color box</option><option>Custom tray / insert</option><option>Starter kit packaging</option><option>Not sure yet</option></select></div>
+            <div class="form-group"><label for="timeline">Timeline</label><input id="timeline" name="timeline" placeholder="Sample or delivery timeline"></div>
+            <div class="form-group full"><label for="message">Message (Optional)</label><textarea id="message" name="message" placeholder="Tell us your product idea, target model, market, packaging needs, quantity plan, required documents, and timeline if available."></textarea></div>
           </div>
-          <button type="submit" class="btn btn-primary v8-rfq-submit">Submit RFQ</button>
+          <button class="btn btn-primary submit" type="submit">Submit RFQ →</button>
         </form>
       </div>
-    </div>
+    </section>
+  </main>
 
-  </div>
-</section>
-
-<!-- ╔══════════════════════════════════════════════╗
-     ║  FOOTER                                      ║
-     ╚══════════════════════════════════════════════╝ -->
-<footer>
-  <div class="container">
-    <div class="v8-footer-grid">
-
-      <div class="v8-footer-brand">
-        <div class="v8-footer-logo">[BRAND_NAME]</div>
-        <p>Your trusted OEM/ODM partner for cosmetic-use microneedling tool systems and consumables.</p>
-        <div class="v8-footer-socials">
-          <a href="#" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
-          </a>
-          <a href="#" aria-label="Instagram">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor"/></svg>
-          </a>
-          <a href="#" aria-label="YouTube">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22.54 6.42A2.78 2.78 0 0 0 20.6 4.47C18.88 4 12 4 12 4s-6.88 0-8.6.47A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.4 19.53C5.12 20 12 20 12 20s6.88 0 8.6-.47a2.78 2.78 0 0 0 1.94-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/></svg>
-          </a>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Dermadream</div>
+          <p>Guangzhou Dermadream Electronic Technology Co., Ltd. supports global B2B buyers with cosmetic-use microneedling tool systems and consumable supply planning.</p>
         </div>
+        <div><h4>Products</h4><ul><li><a href="products/index.html">Product Systems</a></li><li><a href="products/needle-cartridges.html">Needle Cartridges</a></li><li><a href="products/applicator-heads.html">Applicator Tools</a></li><li><a href="products/derma-rollers-multi-head-tools.html">Rollers &amp; Multi-Head Tools</a></li><li><a href="private-label-packaging.html">Starter Kits</a></li></ul></div>
+        <div><h4>OEM/ODM</h4><ul><li><a href="oem-odm.html">OEM/ODM Support</a></li><li><a href="private-label-packaging.html">Private Label</a></li><li><a href="private-label-packaging.html">Packaging</a></li><li><a href="oem-odm.html">Project Workflow</a></li></ul></div>
+        <div><h4>Company</h4><ul><li><a href="factory-quality.html">Factory Overview</a></li><li><a href="factory-quality.html">Quality Process</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+        <div><h4>Contact</h4><ul><li>Email: sales@dermadream.com.cn</li><li>WhatsApp: +86 189 9849 0241</li><li>Location: Guangdong, China</li></ul></div>
+        
       </div>
-
-      <div class="v8-footer-col">
-        <h4>Products</h4>
-        <ul>
-          <li><a href="products/index.html">Device Platforms</a></li>
-          <li><a href="products/needle-cartridges.html">Needle Cartridges</a></li>
-          <li><a href="products/index.html">Applicator Heads</a></li>
-          <li><a href="products/nano-silicone-crystal-heads.html">Crystal Heads</a></li>
-          <li><a href="private-label-packaging.html">Private Label Packaging</a></li>
-        </ul>
-      </div>
-
-      <div class="v8-footer-col">
-        <h4>OEM/ODM</h4>
-        <ul>
-          <li><a href="oem-odm.html">Customization</a></li>
-          <li><a href="private-label-packaging.html">Packaging &amp; Branding</a></li>
-          <li><a href="factory-quality.html">Quality Control</a></li>
-          <li><a href="oem-odm.html">Affordability</a></li>
-          <li><a href="oem-odm.html">Supply Support</a></li>
-        </ul>
-      </div>
-
-      <div class="v8-footer-col">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="#">Factory</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Quality Commitment</a></li>
-          <li><a href="#">Sustainability</a></li>
-          <li><a href="#">News</a></li>
-        </ul>
-      </div>
-
-      <div class="v8-footer-col">
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="contact.html">Email: info@yourbrand.com</a></li>
-          <li><a href="https://wa.me/[REPLACE_WITH_WHATSAPP_NUMBER]">WhatsApp: +86 123 456 7890</a></li>
-          <li>Address: Your Industrial Park,<br>City, Country</li>
-        </ul>
-      </div>
-
+      <div class="copyright">© 2026 Dermadream. All rights reserved.</div>
     </div>
+  </footer>
 
-    <div class="v8-footer-bottom">
-      <span>&copy; 2026 <span class="footer-company-name">[REPLACE_WITH_COMPANY_NAME]</span>. All rights reserved.</span>
-      <div class="v8-footer-bottom-links">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Use</a>
-        <a href="#">Sitemap</a>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<!-- Sticky WhatsApp -->
-<div class="sticky-whatsapp">
-  <a href="https://wa.me/[REPLACE_WITH_WHATSAPP_NUMBER]" class="whatsapp-icon whatsapp-btn" target="_blank" title="Chat on WhatsApp">WA</a>
-</div>
-
-<script src="assets/js/config.js"></script>
-<script src="assets/js/main.js"></script>
+  <script src="assets/js/site.js?v=20260624-1"></script>
 </body>
 </html>
