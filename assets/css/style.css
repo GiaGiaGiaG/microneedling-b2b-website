@@ -2793,12 +2793,12 @@ h2 {
 .v8-hero-inner {
   display: grid;
   grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr);
-  min-height: 580px;
+  min-height: 660px;
   align-items: center;
   gap: 0;
 }
 .v8-hero-text {
-  padding: 7rem 4rem 7rem 0;
+  padding: 8.5rem 4rem 8.5rem 0;
 }
 .v8-hero-h1 {
   font-size: clamp(2.55rem, 4.4vw, 5rem);
