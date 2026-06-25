@@ -6,6 +6,7 @@
   <title>Request OEM/ODM Quote | Dermadream</title>
   <meta name="description" content="Request an OEM/ODM quote for cosmetic-use microneedling tool systems. Share product type, quantity, packaging needs, target market, and customization requirements." />
   <link rel="stylesheet" href="assets/css/preview-pages.css" />
+  <link rel="stylesheet" href="assets/css/checkbox-form.css" />
 </head>
 <body>
   <header class="site-header">
@@ -47,13 +48,39 @@
               <div class="form-group"><label for="name">Name *</label><input id="name" name="name" placeholder="Your name" required></div>
               <div class="form-group"><label for="company">Company *</label><input id="company" name="company" placeholder="Your company" required></div>
               <div class="form-group"><label for="email">Email *</label><input id="email" name="email" type="email" placeholder="name@company.com" required></div>
-              <div class="form-group"><label for="phone">WhatsApp / Phone</label><input id="phone" name="phone" placeholder="Your WhatsApp / phone"></div>
+              <div class="form-group"><label for="phone">WhatsApp / Phone *</label><input id="phone" name="phone" placeholder="Your WhatsApp / phone" required></div>
               <div class="form-group"><label for="region">Country / Region</label><input id="region" name="region" placeholder="Destination or target market"></div>
-              <div class="form-group"><label for="product">Product Category</label><select id="product" name="product"><option>Please select</option><option>Microneedling Device Systems</option><option>Microneedling Needle Cartridges</option><option>Standalone Applicator Tools</option><option>Crystal / Nano / Silicone Head Options</option><option>Derma Rollers & Multi-Head Tools</option><option>Private Label Packaging & Starter Kits</option><option>OEM/ODM Product Line Solutions</option><option>Not Sure Yet</option></select></div>
+              <div class="form-group full"><label>Products of Interest</label><div class="checkbox-grid">
+                <label class="cb-item"><input type="checkbox" name="product[]" value="Microneedling Device Systems"> Microneedling Device Systems</label>
+                <label class="cb-item"><input type="checkbox" name="product[]" value="Microneedling Needle Cartridges"> Microneedling Needle Cartridges</label>
+                <label class="cb-item"><input type="checkbox" name="product[]" value="Standalone Applicator Tools"> Standalone Applicator Tools</label>
+                <label class="cb-item"><input type="checkbox" name="product[]" value="Crystal / Nano / Silicone Head Options"> Crystal / Nano / Silicone Head Options</label>
+                <label class="cb-item"><input type="checkbox" name="product[]" value="Derma Rollers & Multi-Head Tools"> Derma Rollers &amp; Multi-Head Tools</label>
+                <label class="cb-item"><input type="checkbox" name="product[]" value="Private Label Packaging & Starter Kits"> Private Label Packaging &amp; Starter Kits</label>
+                <label class="cb-item"><input type="checkbox" name="product[]" value="OEM/ODM Product Line Solutions"> OEM/ODM Product Line Solutions</label>
+                <label class="cb-item"><input type="checkbox" name="product[]" value="Not Sure Yet"> Not Sure Yet</label>
+              </div></div>
               <div class="form-group"><label for="model">Interested Model</label><input id="model" name="model" placeholder="F20, M30, NK3 Ultra, NH4, etc."></div>
               <div class="form-group"><label for="quantity">Order Quantity</label><select id="quantity" name="quantity"><option>Please select</option><option>Sample order</option><option>Small batch</option><option>Batch order</option><option>Reorder supply</option><option>To be confirmed</option></select></div>
-              <div class="form-group"><label for="privateLabel">Private Label Need</label><select id="privateLabel" name="privateLabel"><option>Please select</option><option>Logo customization</option><option>Color customization</option><option>Packaging box</option><option>User manual / insert</option><option>Tray / inner support</option><option>Starter kit / bundle</option><option>No private label needed yet</option><option>Not sure yet</option></select></div>
-              <div class="form-group"><label for="packaging">Packaging Need</label><select id="packaging" name="packaging"><option>Please select</option><option>Bulk packaging</option><option>Sticker / simple label</option><option>Logo printing on box</option><option>Full custom color box</option><option>Custom tray / insert</option><option>Starter kit packaging</option><option>Not sure yet</option></select></div>
+              <div class="form-group full"><label>Private Label Need</label><div class="checkbox-grid">
+                <label class="cb-item"><input type="checkbox" name="privateLabel[]" value="Logo customization"> Logo customization</label>
+                <label class="cb-item"><input type="checkbox" name="privateLabel[]" value="Color customization"> Color customization</label>
+                <label class="cb-item"><input type="checkbox" name="privateLabel[]" value="Packaging box"> Packaging box</label>
+                <label class="cb-item"><input type="checkbox" name="privateLabel[]" value="User manual / insert"> User manual / insert</label>
+                <label class="cb-item"><input type="checkbox" name="privateLabel[]" value="Tray / inner support"> Tray / inner support</label>
+                <label class="cb-item"><input type="checkbox" name="privateLabel[]" value="Starter kit / bundle"> Starter kit / bundle</label>
+                <label class="cb-item"><input type="checkbox" name="privateLabel[]" value="No private label needed yet"> No private label needed yet</label>
+                <label class="cb-item"><input type="checkbox" name="privateLabel[]" value="Not sure yet"> Not sure yet</label>
+              </div></div>
+              <div class="form-group full"><label>Packaging Need</label><div class="checkbox-grid">
+                <label class="cb-item"><input type="checkbox" name="packaging[]" value="Bulk packaging"> Bulk packaging</label>
+                <label class="cb-item"><input type="checkbox" name="packaging[]" value="Sticker / simple label"> Sticker / simple label</label>
+                <label class="cb-item"><input type="checkbox" name="packaging[]" value="Logo printing on box"> Logo printing on box</label>
+                <label class="cb-item"><input type="checkbox" name="packaging[]" value="Full custom color box"> Full custom color box</label>
+                <label class="cb-item"><input type="checkbox" name="packaging[]" value="Custom tray / insert"> Custom tray / insert</label>
+                <label class="cb-item"><input type="checkbox" name="packaging[]" value="Starter kit packaging"> Starter kit packaging</label>
+                <label class="cb-item"><input type="checkbox" name="packaging[]" value="Not sure yet"> Not sure yet</label>
+              </div></div>
               <div class="form-group"><label for="targetMarket">Target Market</label><input id="targetMarket" name="targetMarket" placeholder="Europe, North America, Middle East, etc."></div>
               <div class="form-group"><label for="timeline">Timeline</label><input id="timeline" name="timeline" placeholder="Sample timing or expected delivery timeline"></div>
               <div class="form-group full"><label for="message">Message / Project Details</label><textarea id="message" name="message" placeholder="Tell us your target model, estimated quantity, packaging requirements, logo / color / manual / insert needs, required documents, shipping destination, and timeline."></textarea></div>
@@ -72,7 +99,7 @@
           </ul>
           <div class="content-block">
             <h3>Contact Details</h3>
-            <p>Company: Guangzhou Dermadream Electronic Technology Co., Ltd.<br>Location: Guangdong, China<br>Email: sales@dermadream.com.cn<br>WhatsApp: +86 189 9849 0241</p>
+            <p>Company: Guangzhou Dermadream Electronic Technology Co., Ltd.<br>Location: Guangdong, China<br>Email: <a href="mailto:hello@dermadreamglobal.com">hello@dermadreamglobal.com</a><br>WhatsApp: +86 189 9849 0241</p>
             <p class="contact-note">We will review your product interest, quantity, packaging needs, and customization requirements before suggesting suitable options.</p>
           </div>
         </div>
