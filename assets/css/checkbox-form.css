@@ -1,61 +1,53 @@
-/* ── Compact Checkbox grid for multi-select form fields ── */
+/* ── Compact Checkbox grid — Brief spec: grid 16px + 1fr ── */
 .checkbox-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3 columns for desktop compactness */
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 6px 14px;
   margin-top: 6px;
 }
 
+/* Brief Required Fix 2: grid-based alignment so text wraps under itself */
 .cb-item {
-  display: flex !important;
-  align-items: flex-start !important;
-  gap: 8px;
-  font-size: 13px !important; /* Override general label 12px */
-  font-weight: 500 !important; /* Override general label 800 */
+  display: grid !important;
+  grid-template-columns: 16px 1fr !important;
+  column-gap: 10px !important;
+  align-items: start !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
   color: #475569 !important;
   line-height: 1.4 !important;
   cursor: pointer;
   padding: 2px 0;
-  border: none;
-  background: none;
-  transition: color .15s;
-  margin-bottom: 0 !important; /* Override general label margin-bottom */
+  border: none !important;
+  background: none !important;
+  margin-bottom: 0 !important;
 }
 
-.cb-item:hover {
-  color: #0b1f33 !important;
-}
+.cb-item:hover { color: #0b1f33 !important; }
 
 .cb-item input[type="checkbox"] {
-  width: 14px;
-  height: 14px;
-  min-width: 14px;
-  margin: 0;
-  margin-top: 3px !important; /* Perfect vertical centering with the first line of text */
+  -webkit-appearance: auto !important;
+  appearance: auto !important;
+  width: 16px !important;
+  height: 16px !important;
+  min-height: 0 !important;
+  min-width: 0 !important;
+  padding: 0 !important;
+  margin: 2px 0 0 !important;
+  border-radius: 0 !important;
+  box-sizing: border-box !important;
   accent-color: #1e3a5f;
   cursor: pointer;
 }
 
 .cb-item input[type="checkbox"]:checked + * {
-  color: #0b1f33;
-  font-weight: 700;
-}
-
-/* Override the :has wrapper styles since we removed the box/card look */
-.cb-item:has(input:checked) {
-  border-color: transparent;
-  background: none;
+  color: #0b1f33 !important;
+  font-weight: 700 !important;
 }
 
 @media (max-width: 1024px) {
-  .checkbox-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 columns for tablets */
-  }
+  .checkbox-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
-
 @media (max-width: 640px) {
-  .checkbox-grid {
-    grid-template-columns: 1fr; /* 1 column for mobile */
-    gap: 6px 0;
-  }
+  .checkbox-grid { grid-template-columns: 1fr; gap: 6px 0; }
 }
