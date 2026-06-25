@@ -686,6 +686,59 @@
       font-size: 12px;
       font-weight: 800;
     }
+    /* ── Compact Checkbox grid for multi-select form fields ── */
+    .checkbox-grid {
+      display: grid !important;
+      grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+      gap: 6px 14px !important;
+      margin-top: 6px !important;
+    }
+    .cb-item {
+      display: flex !important;
+      align-items: flex-start !important;
+      gap: 8px !important;
+      font-size: 13px !important;
+      font-weight: 500 !important;
+      color: #475569 !important;
+      line-height: 1.4 !important;
+      cursor: pointer !important;
+      padding: 2px 0 !important;
+      border: none !important;
+      background: none !important;
+      transition: color .15s !important;
+      margin-bottom: 0 !important;
+    }
+    .cb-item:hover {
+      color: #0b1f33 !important;
+    }
+    .cb-item input[type="checkbox"] {
+      width: 14px !important;
+      height: 14px !important;
+      min-width: 14px !important;
+      margin: 0 !important;
+      margin-top: 3px !important;
+      accent-color: #1e3a5f !important;
+      cursor: pointer !important;
+    }
+    .cb-item input[type="checkbox"]:checked + * {
+      color: #0b1f33 !important;
+      font-weight: 700 !important;
+    }
+    .cb-item:has(input:checked) {
+      border-color: transparent !important;
+      background: none !important;
+    }
+    @media (max-width: 1024px) {
+      .checkbox-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+      }
+    }
+    @media (max-width: 640px) {
+      .checkbox-grid {
+        grid-template-columns: 1fr !important;
+        gap: 6px 0 !important;
+      }
+    }
     input, select, textarea {
       width: 100%;
       min-height: 42px;
