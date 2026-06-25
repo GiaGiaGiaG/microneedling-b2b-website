@@ -70,13 +70,31 @@
       }
 
       status.classList.remove('is-error');
-      status.innerHTML = 'Thanks. Your RFQ details are ready for sales review. For the fastest response, email <a href="mailto:sales@dermadream.com.cn">sales@dermadream.com.cn</a> or contact us on <a href="https://wa.me/8618998490241">WhatsApp</a>.';
-      form.classList.add('is-submitted');
+      status.textContent = 'Sending...';
+
+      var formData = new FormData(form);
+
+      fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      })
+      .then(function (response) {
+        if (response.ok) {
+          status.innerHTML = 'Thank you! Your inquiry has been received. We will respond within 1 business day. For urgent requests, contact us on <a href="https://wa.me/8618998490241">WhatsApp</a>.';
+          form.classList.add('is-submitted');
+          form.reset();
+        } else {
+          status.classList.add('is-error');
+          status.textContent = 'Something went wrong. Please email us directly at info@dermadreamglobal.com';
+        }
+      })
+      .catch(function () {
+        status.classList.add('is-error');
+        status.textContent = 'Network error. Please email us directly at info@dermadreamglobal.com';
+      });
     }
 
     form.addEventListener('submit', handleSubmit);
-    if (button) {
-      button.addEventListener('click', handleSubmit);
-    }
   });
 }());
