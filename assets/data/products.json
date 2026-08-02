@@ -1,0 +1,36 @@
+{
+  "categories": [
+    {
+      "id": "device-systems",
+      "name": "Device Systems",
+      "description": "Cosmetic-use device platforms for B2B supply, OEM/ODM projects, and private label kit planning.",
+      "slug": "device-systems",
+      "href": "device-systems.html",
+      "models": []
+    },
+    {
+      "id": "needle-cartridges",
+      "name": "Needle Cartridges",
+      "description": "Replaceable cartridge options for compatible device systems, sample planning, and reorder supply.",
+      "slug": "needle-cartridges",
+      "href": "needle-cartridges.html",
+      "models": []
+    },
+    {
+      "id": "applicator-heads",
+      "name": "Applicator & Reservoir Heads",
+      "description": "Applicator and reservoir head options for selected cosmetic-use tool configurations and project requirements.",
+      "slug": "applicator-heads",
+      "href": "applicator-heads.html",
+      "models": []
+    },
+    {
+      "id": "starter-kits",
+      "name": "Private Label Starter Kits",
+      "description": "Starter kit and packaging structures for brand presentation, distributor programs, and OEM/ODM quotation planning.",
+      "slug": "starter-kits",
+      "href": "../private-label-packaging.html",
+      "models": []
+    }
+  ]
+}
