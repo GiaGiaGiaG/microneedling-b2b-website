@@ -6,6 +6,92 @@
   <title>Product Catalog Framework | Dermadream</title>
   <meta name="description" content="Scalable Dermadream product catalog framework for B2B category planning, model selection support, OEM/ODM projects, and private label packaging." />
   <link rel="stylesheet" href="../assets/css/preview-pages.css" />
+  <style>
+    .catalog-list {
+      display: grid;
+      gap: 0;
+      border-top: 1px solid #dce8f5;
+      background: #fff;
+    }
+    .catalog-item {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 28px;
+      align-items: end;
+      padding: 34px 0 36px;
+      border-bottom: 1px solid #dce8f5;
+    }
+    .catalog-item small {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      margin-bottom: 12px;
+      color: #2f78e6;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+    .catalog-item small::before {
+      content: "";
+      width: 20px;
+      height: 2px;
+      background: #2f78e6;
+      flex: 0 0 20px;
+    }
+    .catalog-item h3 {
+      margin: 0 0 12px;
+      color: #092a52;
+      font-size: 22px;
+      line-height: 1.22;
+    }
+    .catalog-item p {
+      max-width: 720px;
+      margin: 0;
+      color: #536b88;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+    .catalog-meta {
+      display: inline-flex;
+      width: fit-content;
+      margin-top: 18px;
+      padding: 8px 12px;
+      border: 1px solid #d5e7fb;
+      border-radius: 999px;
+      background: #f5faff;
+      color: #2a5785;
+      font-size: 12px;
+      font-weight: 800;
+      line-height: 1.35;
+    }
+    .catalog-actions {
+      display: flex;
+      gap: 10px;
+      justify-content: flex-end;
+      align-items: center;
+      min-width: 300px;
+    }
+    .catalog-actions .btn {
+      min-width: 142px;
+      justify-content: center;
+    }
+    @media (max-width: 760px) {
+      .catalog-item {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 30px 0 32px;
+      }
+      .catalog-actions {
+        justify-content: flex-start;
+        min-width: 0;
+        flex-wrap: wrap;
+      }
+      .catalog-actions .btn {
+        min-width: 0;
+      }
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -54,43 +140,51 @@
           </div>
           <p>Specific model pages will be added after product data confirmation. This framework keeps the catalog expandable without inventing unconfirmed model names, specifications, or claims.</p>
         </div>
-        <div class="matrix cols-2" id="productCategoryGrid">
-          <article class="matrix-cell">
-            <small>Category</small>
-            <h3>Device Systems</h3>
-            <p>Cosmetic-use device platforms for B2B supply, OEM/ODM projects, and private label kit planning.</p>
-            <div class="mini-tags"><span>Model options will be added based on confirmed product line.</span></div>
-            <div class="hero-actions">
+        <div class="catalog-list" id="productCategoryGrid">
+          <article class="catalog-item">
+            <div>
+              <small>Category</small>
+              <h3>Device Systems</h3>
+              <p>Cosmetic-use device platforms for B2B supply, OEM/ODM projects, and private label kit planning.</p>
+              <div class="catalog-meta">Model options will be added after product line confirmation.</div>
+            </div>
+            <div class="catalog-actions">
               <a class="btn btn-light" href="device-systems.html">View Category</a>
               <a class="btn btn-primary" href="../contact.html">Request Quote</a>
             </div>
           </article>
-          <article class="matrix-cell">
-            <small>Category</small>
-            <h3>Needle Cartridges</h3>
-            <p>Replaceable cartridge options for compatible device systems, sample planning, and reorder supply.</p>
-            <div class="mini-tags"><span>Model options will be added based on confirmed product line.</span></div>
-            <div class="hero-actions">
+          <article class="catalog-item">
+            <div>
+              <small>Category</small>
+              <h3>Needle Cartridges</h3>
+              <p>Replaceable cartridge options for compatible device systems, sample planning, and reorder supply.</p>
+              <div class="catalog-meta">Model options will be added after product line confirmation.</div>
+            </div>
+            <div class="catalog-actions">
               <a class="btn btn-light" href="needle-cartridges.html">View Category</a>
               <a class="btn btn-primary" href="../contact.html">Request Quote</a>
             </div>
           </article>
-          <article class="matrix-cell">
-            <small>Category</small>
-            <h3>Applicator & Reservoir Heads</h3>
-            <p>Applicator and reservoir head options for selected cosmetic-use tool configurations and project requirements.</p>
-            <div class="mini-tags"><span>Model options will be added based on confirmed product line.</span></div>
-            <div class="hero-actions">
+          <article class="catalog-item">
+            <div>
+              <small>Category</small>
+              <h3>Applicator & Reservoir Heads</h3>
+              <p>Applicator and reservoir head options for selected cosmetic-use tool configurations and project requirements.</p>
+              <div class="catalog-meta">Model options will be added after product line confirmation.</div>
+            </div>
+            <div class="catalog-actions">
               <a class="btn btn-light" href="applicator-heads.html">View Category</a>
               <a class="btn btn-primary" href="../contact.html">Request Quote</a>
             </div>
           </article>
-          <article class="matrix-cell">
-            <small>Category</small>
-            <h3>Private Label Starter Kits</h3>
-            <p>Starter kit and packaging structures for brand presentation, distributor programs, and OEM/ODM quotation planning.</p>
-            <div class="mini-tags"><span>Model options will be added based on confirmed product line.</span></div>
-            <div class="hero-actions">
+          <article class="catalog-item">
+            <div>
+              <small>Category</small>
+              <h3>Private Label Starter Kits</h3>
+              <p>Starter kit and packaging structures for brand presentation, distributor programs, and OEM/ODM quotation planning.</p>
+              <div class="catalog-meta">Model options will be added after product line confirmation.</div>
+            </div>
+            <div class="catalog-actions">
               <a class="btn btn-light" href="../private-label-packaging.html">View Category</a>
               <a class="btn btn-primary" href="../contact.html">Request Quote</a>
             </div>
@@ -151,7 +245,7 @@
   <footer class="footer">
     <div class="container footer-grid">
       <div><div class="footer-brand">Dermadream</div><p>OEM/ODM partner for cosmetic-use microneedling tool systems.</p></div>
-      <div><h4>Products</h4><ul><li><a href="index.html">Product Catalog</a></li><li><a href="category-template.html">Category Template</a></li><li><a href="model-template.html">Model Template</a></li></ul></div>
+      <div><h4>Products</h4><ul><li><a href="index.html">Product Catalog</a></li><li><a href="device-systems.html">Device Systems</a></li><li><a href="needle-cartridges.html">Needle Cartridges</a></li><li><a href="applicator-heads.html">Applicator Heads</a></li></ul></div>
       <div><h4>OEM/ODM</h4><ul><li><a href="../oem-odm.html">Customization</a></li><li><a href="../private-label-packaging.html">Packaging</a></li></ul></div>
       <div><h4>Company</h4><ul><li><a href="../factory-quality.html">Factory</a></li><li><a href="../faq.html">FAQ</a></li></ul></div>
       <div><h4>Contact</h4><ul><li><a href="../contact.html">Request Quote</a></li><li><a href="https://wa.me/8618998490241">WhatsApp</a></li></ul></div>
@@ -174,14 +268,15 @@
             var href = category.href || 'category-template.html';
             var modelText = category.models && category.models.length
               ? category.models.length + ' model option(s) available'
-              : 'Model options will be added based on confirmed product line.';
+              : 'Model options will be added after product line confirmation.';
             return [
-              '<article class="matrix-cell">',
+              '<article class="catalog-item">',
+              '<div>',
               '<small>Category</small>',
               '<h3>' + escapeHtml(category.name) + '</h3>',
               '<p>' + escapeHtml(category.description) + '</p>',
-              '<div class="mini-tags"><span>' + escapeHtml(modelText) + '</span></div>',
-              '<div class="hero-actions">',
+              '<div class="catalog-meta">' + escapeHtml(modelText) + '</div></div>',
+              '<div class="catalog-actions">',
               '<a class="btn btn-light" href="' + escapeAttr(href) + '">View Category</a>',
               '<a class="btn btn-primary" href="../contact.html">Request Quote</a>',
               '</div>',
