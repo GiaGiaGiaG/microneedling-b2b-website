@@ -33,7 +33,7 @@
          "url": "https://www.dermadreamglobal.com/",
          "logo": {
            "@type": "ImageObject",
-           "url": "https://www.dermadreamglobal.com/assets/images/logo.png"
+            "url": "https://www.dermadreamglobal.com/assets/images/brand/dermadream-logo.png"
          },
          "description": "B2B manufacturer specializing in microneedling product systems, providing OEM/ODM development, private-label support, ISO 13485 quality systems, and stable consumable supply for global beauty brands and distributors.",
          "address": {
@@ -115,15 +115,20 @@
     .nav {
       height: 76px;
       display: grid;
-      grid-template-columns: 220px 1fr auto;
+      grid-template-columns: minmax(160px, 240px) 1fr auto;
       align-items: center;
       gap: 28px;
     }
     .brand {
-      font-size: 24px;
-      font-weight: 800;
-      letter-spacing: .02em;
-      color: var(--navy);
+      display: flex;
+      align-items: center;
+      line-height: 0;
+    }
+    .brand img {
+      display: block;
+      height: 32px;
+      width: auto;
+      max-width: 240px;
     }
     .nav-links {
       display: flex;
@@ -860,10 +865,20 @@
       gap: 36px;
     }
     .footer-brand {
-      color: #fff;
-      font-size: 24px;
-      font-weight: 800;
       margin-bottom: 14px;
+    }
+    .footer-brand-plate {
+      display: inline-flex;
+      align-items: center;
+      background: #fff;
+      border-radius: 8px;
+      padding: 8px 12px;
+    }
+    .footer-brand img {
+      display: block;
+      height: 28px;
+      width: auto;
+      max-width: 220px;
     }
     .footer p,
     .footer a,
@@ -937,6 +952,7 @@
     @media (max-width: 720px) {
       .container { width: min(100% - 32px, 1400px); }
       .nav { height: auto; min-height: 68px; grid-template-columns: 1fr auto; padding: 12px 0; }
+      .brand img { height: 26px; max-width: none; }
       .nav.is-open .nav-links,
       .nav.is-open .nav-actions {
         grid-template-columns: 1fr;
@@ -996,7 +1012,7 @@ okkiAdd("analytics", { siteId: "364490-32619", gId: "" });
 <script async src="//tfile.xiaoman.cn/okki/analyze.js?id=364490-32619-"></script>
   <header class="site-header">
     <div class="container nav">
-      <a class="brand" href="index.html">Dermadream</a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primaryNav"><span></span><span></span><span></span><span class="sr-only">Menu</span></button>
+      <a class="brand" href="index.html"><img src="assets/images/brand/dermadream-logo.png" alt="Dermadream"></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primaryNav"><span></span><span></span><span></span><span class="sr-only">Menu</span></button>
       <nav class="nav-links" id="primaryNav" aria-label="Main navigation">
         <a class="active" href="index.html">Home</a>
         <a href="products/index.html">Products</a>
@@ -1218,7 +1234,7 @@ okkiAdd("analytics", { siteId: "364490-32619", gId: "" });
     <div class="container">
       <div class="footer-grid">
         <div>
-          <div class="footer-brand">Dermadream</div>
+          <div class="footer-brand"><span class="footer-brand-plate"><img src="assets/images/brand/dermadream-logo.png" alt="Dermadream"></span></div>
           <p>Guangzhou Dermadream Electronic Technology Co., Ltd. supports global B2B buyers with cosmetic-use microneedling tool systems and consumable supply planning.</p>
         </div>
         <div><h4>Products</h4><ul><li><a href="products/index.html">Product Systems</a></li><li><a href="products/needle-cartridges.html">Needle Cartridges</a></li><li><a href="products/applicator-heads.html">Applicator Tools</a></li><li><a href="products/derma-rollers-multi-head-tools.html">Rollers &amp; Multi-Head Tools</a></li><li><a href="private-label-packaging.html">Starter Kits</a></li></ul></div>
