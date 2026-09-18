@@ -544,18 +544,11 @@ textarea { min-height: 96px; resize: vertical; }
   gap: 34px;
 }
 .footer-brand { margin-bottom: 14px; }
-.footer-brand-plate {
-  display: inline-flex;
-  align-items: center;
-  background: #fff;
-  border-radius: 8px;
-  padding: 8px 12px;
-}
 .footer-brand img {
   display: block;
-  height: 28px;
+  height: 38px;
   width: auto;
-  max-width: 220px;
+  max-width: none;
 }
 .footer p, .footer a, .footer li { color: #c3d2e4; font-size: 13px; line-height: 1.75; }
 .footer h4 { margin: 0 0 14px; color: #fff; font-size: 14px; }
