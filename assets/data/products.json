@@ -2,32 +2,56 @@
   "categories": [
     {
       "id": "device-systems",
-      "name": "Device Systems",
-      "description": "Cosmetic-use device platforms for B2B supply, OEM/ODM projects, and private label kit planning.",
+      "name": "Microneedling Device Systems",
+      "description": "Electric and wireless microneedling device platforms for coordinated device, consumable, and private-label programs.",
       "slug": "device-systems",
-      "href": "device-systems.html",
-      "models": []
+      "href": "device-platforms.html",
+      "models": [
+        {
+          "id": "m20",
+          "name": "M20",
+          "shortDescription": "Wireless Microneedling Pen with 6 Speed Levels, 500 mAh Battery, Type-C Charging, Digital Display, Red / Blue LED, Aluminum Alloy Body, Deep Space Gray, and NH4 compatibility.",
+          "href": "m20.html",
+          "status": "confirmed"
+        }
+      ]
     },
     {
       "id": "needle-cartridges",
-      "name": "Needle Cartridges",
-      "description": "Replaceable cartridge options for compatible device systems, sample planning, and reorder supply.",
+      "name": "Microneedling Needle Cartridges",
+      "description": "Compatible replacement cartridges and wide-area cartridge systems for device matching and repeat consumable supply.",
       "slug": "needle-cartridges",
       "href": "needle-cartridges.html",
       "models": []
     },
     {
-      "id": "applicator-heads",
-      "name": "Applicator & Reservoir Heads",
-      "description": "Applicator and reservoir head options for selected cosmetic-use tool configurations and project requirements.",
-      "slug": "applicator-heads",
+      "id": "applicator-tools",
+      "name": "Standalone Applicator Tools",
+      "description": "Microneedling stamps, reservoir applicators, and standalone cosmetic-use tools for product-line extensions.",
+      "slug": "applicator-tools",
       "href": "applicator-heads.html",
+      "models": []
+    },
+    {
+      "id": "head-options",
+      "name": "Nano / Silicone / Crystal Head Options",
+      "description": "Nano, silicone, and related non-standard head options for different device and product programs.",
+      "slug": "head-options",
+      "href": "nano-silicone-crystal-heads.html",
+      "models": []
+    },
+    {
+      "id": "manual-tools",
+      "name": "Derma Rollers & Multi-Head Tools",
+      "description": "Derma rollers, N-in-1 tools, ice rollers, and manual beauty tools for catalog and starter-kit programs.",
+      "slug": "manual-tools",
+      "href": "derma-rollers-multi-head-tools.html",
       "models": []
     },
     {
       "id": "starter-kits",
       "name": "Private Label Starter Kits",
-      "description": "Starter kit and packaging structures for brand presentation, distributor programs, and OEM/ODM quotation planning.",
+      "description": "Device, consumable, accessory, and packaging combinations for private-label programs and repeat supply planning.",
       "slug": "starter-kits",
       "href": "../private-label-packaging.html",
       "models": []
