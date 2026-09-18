@@ -15,12 +15,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const C = SITE_CONFIG;
 
-    // 1a. Inject brand name into all logo links and footer brand headings
+    // 1a. Keep dedicated image logos intact; fill only text-only legacy slots.
     document.querySelectorAll('.logo a').forEach(el => {
-        el.textContent = C.BRAND_NAME;
+        if (!el.querySelector('img')) el.textContent = C.BRAND_NAME;
     });
     document.querySelectorAll('.footer-brand h2').forEach(el => {
-        el.textContent = C.BRAND_NAME;
+        if (!el.querySelector('img')) el.textContent = C.BRAND_NAME;
     });
 
     // 1b. Inject company name into all footer copyright lines
