@@ -425,6 +425,22 @@
       gap: 0;
       width: 100%;
     }
+    @media (min-width: 1280px) and (max-width: 1599px) {
+      .buyer-links { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+      .buyer-link { font-size: 12px; gap: 8px; padding: 0 8px; }
+    }
+    @media (min-width: 1600px) {
+      .container { width: min(1440px, calc(100% - 96px)); }
+      .hero-grid {
+        min-height: 624px;
+        padding: 80px 0 68px;
+      }
+      h1 { font-size: clamp(62px, 3.4vw, 70px); }
+      .hero-copy { font-size: 18px; }
+      .buyer-links { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+      .buyer-link { font-size: 13px !important; gap: 10px !important; padding: 0 12px !important; }
+      .hero-visual .image-slot img { object-fit: contain !important; }
+    }
     .buyer-link {
       display: flex;
       justify-content: center;
@@ -1072,7 +1088,7 @@ okkiAdd("analytics", { siteId: "364490-32619", gId: "" });
     <section class="section section-soft">
       <div class="container manufacturer-block">
         <div>
-          <div class="kicker">Why Brands Choose Us</div>
+          <div class="kicker">B2B Partnership</div>
           <h2>Why Work With Dermadream</h2>
           <p class="section-lead">More than individual products, Dermadream helps buyers build coordinated microneedling product lines — from device and consumable matching to private label, batch production and repeat supply.</p>
         </div>
