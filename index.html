@@ -113,11 +113,11 @@
       backdrop-filter: blur(14px);
     }
     .nav {
-      height: 76px;
+      height: 70px;
       display: grid;
-      grid-template-columns: minmax(160px, 240px) 1fr auto;
+      grid-template-columns: minmax(150px, 220px) 1fr auto;
       align-items: center;
-      gap: 28px;
+      gap: 24px;
     }
     .brand {
       display: flex;
@@ -126,20 +126,20 @@
     }
     .brand img {
       display: block;
-      height: 32px;
+      height: 30px;
       width: auto;
-      max-width: 240px;
+      max-width: none;
     }
     .nav-links {
       display: flex;
       justify-content: center;
-      gap: 44px;
+      gap: 36px;
       font-size: 14px;
       font-weight: 650;
     }
     .nav-links a {
       position: relative;
-      padding: 28px 0;
+      padding: 25px 0;
     }
     .nav-links a.active { color: var(--blue); }
     .nav-links a.active::after {
@@ -227,10 +227,10 @@
       position: relative;
       min-height: auto;
       display: grid;
-      grid-template-columns: 38% 62%;
+      grid-template-columns: 44% 56%;
       align-items: center;
-      gap: 30px;
-      padding: clamp(64px, 7vw, 104px) 0 clamp(64px, 7vw, 104px);
+      gap: 28px;
+      padding: clamp(56px, 4.5vw, 64px) 0 clamp(48px, 4vw, 56px);
       z-index: 1;
     }
     .hero-grid > div:first-child {
@@ -247,38 +247,38 @@
     }
     h1 {
       margin: 0;
-      max-width: 670px;
+      max-width: 570px;
       color: var(--navy);
-      font-size: clamp(42px, 4.55vw, 68px);
-      line-height: 1.12;
+      font-size: clamp(42px, 4.1vw, 62px);
+      line-height: 1.08;
       letter-spacing: 0;
     }
     .hero-copy {
-      margin: 22px 0 24px;
-      max-width: 540px;
+      margin: 16px 0 18px;
+      max-width: 550px;
       color: #445774;
-      font-size: 17px;
-      line-height: 1.65;
+      font-size: 16.5px;
+      line-height: 1.58;
     }
-    .hero-ctas { display: flex; gap: 18px; margin-bottom: 26px; }
+    .hero-ctas { display: flex; gap: 14px; margin-bottom: 20px; }
     .trust-points {
       display: grid;
-      grid-template-columns: repeat(4, minmax(90px, 1fr));
-      gap: 22px;
+      grid-template-columns: repeat(4, minmax(80px, 1fr));
+      gap: 14px;
       max-width: 560px;
     }
     .trust-point {
       display: grid;
-      grid-template-columns: 32px 1fr;
-      gap: 10px;
+      grid-template-columns: 28px 1fr;
+      gap: 8px;
       align-items: center;
-      font-size: 13px;
+      font-size: 12px;
       font-weight: 800;
-      line-height: 1.2;
+      line-height: 1.18;
     }
     .icon {
-      width: 32px;
-      height: 32px;
+      width: 28px;
+      height: 28px;
       color: var(--blue);
     }
     .hero-visual {
@@ -286,7 +286,7 @@
       top: 0;
       right: calc((100vw - 100%) / -2);
       bottom: 0;
-      left: 46%;
+      left: 48%;
       z-index: 0;
       min-width: 0;
       min-height: 0;
@@ -330,7 +330,7 @@
     }
      .hero-visual .image-slot img {
        object-fit: cover;
-       object-position: center center;
+       object-position: 58% center;
      }
     .image-slot img {
       width: 100%;
@@ -1025,9 +1025,8 @@ okkiAdd("analytics", { siteId: "364490-32619", gId: "" });
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <div class="kicker" style="margin-bottom:14px"><strong style="letter-spacing:.14em">DERMADREAM</strong> · Microneedling R&amp;D &amp; Manufacturing Solutions</div>
-          <h1>Microneedling Product Systems for Global Beauty Brands</h1>
-          <p class="hero-copy">R&amp;D, manufacturing and private-label support for microneedling devices, consumables and professional beauty tools — built for brands, distributors and professional channels.</p>
+          <h1>Microneedling R&amp;D &amp; Manufacturing Solutions</h1>
+          <p class="hero-copy">Specialized development and manufacturing of microneedling devices, compatible consumables and applicator tools — from OEM/ODM and private label to stable repeat supply.</p>
           <div class="hero-ctas">
             <a class="btn btn-primary" href="products/index.html">Explore Products →</a>
             <a class="btn btn-light" href="#rfq">Start Your Project</a>
@@ -1035,8 +1034,8 @@ okkiAdd("analytics", { siteId: "364490-32619", gId: "" });
           <div class="trust-points">
             <div class="trust-point"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 16V8l-9-5-9 5v8l9 5 9-5z"/><path d="M3.3 7.5 12 12l8.7-4.5M12 22V12"/></svg><span>Device + Consumable<br>Systems</span></div>
             <div class="trust-point"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="m14.7 6.3 3 3L7 20l-4 1 1-4L14.7 6.3zM16 5l3 3"/></svg><span>OEM / ODM<br>Development</span></div>
-            <div class="trust-point"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20.6 8.4 12 17l-3.6-3.6M3 12l4-8h10l4 8-9 10z"/></svg><span>Private Label<br>Solutions</span></div>
-            <div class="trust-point"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M23 4v6h-6M1 20v-6h6"/><path d="M3.5 9a9 9 0 0 1 14.8-3.4L23 10M1 14l4.7 4.4A9 9 0 0 0 20.5 15"/></svg><span>Stable Reorder<br>Supply</span></div>
+            <div class="trust-point"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20.6 8.4 12 17l-3.6-3.6M3 12l4-8h10l4 8-9 10z"/></svg><span>Private Label &amp;<br>Packaging</span></div>
+            <div class="trust-point"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M23 4v6h-6M1 20v-6h6"/><path d="M3.5 9a9 9 0 0 1 14.8-3.4L23 10M1 14l4.7 4.4A9 9 0 0 0 20.5 15"/></svg><span>Batch &amp; Repeat<br>Supply</span></div>
           </div>
         </div>
         <div class="hero-visual">
@@ -1051,7 +1050,7 @@ okkiAdd("analytics", { siteId: "364490-32619", gId: "" });
       <div class="container capability-row">
         <div class="cap-item"><svg class="mini-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-5"/></svg>ISO 13485 Quality System</div>
         <div class="cap-item"><svg class="mini-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M9.7 17H6a4 4 0 0 1 0-8 5 5 0 0 1 9.6-1.5A4.5 4.5 0 0 1 18 17h-3.7"/><path d="M12 12v9M9 18l3 3 3-3"/></svg>In-house Product Development</div>
-        <div class="cap-item"><svg class="mini-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-8h6v8"/></svg>Device &amp; Consumable Matching</div>
+        <div class="cap-item"><svg class="mini-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-8h6v8"/></svg>Controlled Manufacturing &amp; QC</div>
         <div class="cap-item"><svg class="mini-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 0 20M12 2a15.3 15.3 0 0 0 0 20"/></svg>Global B2B Supply</div>
       </div>
     </section>
@@ -1060,11 +1059,12 @@ okkiAdd("analytics", { siteId: "364490-32619", gId: "" });
       <div class="container buyer-inner">
         <div class="buyer-title">Who We Support</div>
         <div class="buyer-links">
-          <a class="buyer-link" href="#rfq"><svg class="mini-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 2h8M10 2v6l-5 9a3 3 0 0 0 2.6 5h8.8a3 3 0 0 0 2.6-5l-5-9V2"/></svg>Beauty Brands</a>
-          <a class="buyer-link" href="#rfq"><svg class="mini-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 21V7l6-4 6 4v14M15 9h6v12M7 10h2M7 14h2M11 10h2M11 14h2"/></svg>Distributors &amp; Wholesalers</a>
-          <a class="buyer-link" href="#rfq"><svg class="mini-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2 4 6v6c0 5 3.5 8 8 10 4.5-2 8-5 8-10V6z"/><path d="M12 6v6l4 2"/></svg>Professional Beauty Channels</a>
-          <a class="buyer-link" href="#rfq"><svg class="mini-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20.6 8.4 12 17l-3.6-3.6M3 12l4-8h10l4 8-9 10z"/></svg>Private Label Businesses</a>
-          <a class="buyer-link" href="#rfq"><svg class="mini-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M23 4v6h-6M1 20v-6h6"/><path d="M3.5 9a9 9 0 0 1 14.8-3.4L23 10M1 14l4.7 4.4A9 9 0 0 0 20.5 15"/></svg>Existing Consumable Buyers</a>
+          <a class="buyer-link" href="#rfq"><svg class="mini-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 2h8M10 2v6l-5 9a3 3 0 0 0 2.6 5h8.8a3 3 0 0 0 2.6-5l-5-9V2"/></svg>Emerging Beauty &amp; Tech Brands</a>
+          <a class="buyer-link" href="#rfq"><svg class="mini-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 21V7l6-4 6 4v14M15 9h6v12M7 10h2M7 14h2M11 10h2M11 14h2"/></svg>Skincare &amp; Serum Brands</a>
+          <a class="buyer-link" href="#rfq"><svg class="mini-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2 4 6v6c0 5 3.5 8 8 10 4.5-2 8-5 8-10V6z"/><path d="M12 6v6l4 2"/></svg>DTC &amp; E-commerce Brands</a>
+          <a class="buyer-link" href="#rfq"><svg class="mini-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20.6 8.4 12 17l-3.6-3.6M3 12l4-8h10l4 8-9 10z"/></svg>Importers &amp; Regional Distributors</a>
+          <a class="buyer-link" href="#rfq"><svg class="mini-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M23 4v6h-6M1 20v-6h6"/><path d="M3.5 9a9 9 0 0 1 14.8-3.4L23 10M1 14l4.7 4.4A9 9 0 0 0 20.5 15"/></svg>Spa &amp; Professional Beauty Chains</a>
+          <a class="buyer-link" href="#rfq"><svg class="mini-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M8 2h8M10 2v6l-5 9a3 3 0 0 0 2.6 5h8.8a3 3 0 0 0 2.6-5l-5-9V2"/></svg>Aesthetic Clinics &amp; Professional Partners</a>
         </div>
       </div>
     </section>
@@ -1073,13 +1073,13 @@ okkiAdd("analytics", { siteId: "364490-32619", gId: "" });
       <div class="container manufacturer-block">
         <div>
           <div class="kicker">Why Brands Choose Us</div>
-          <h2>Why Brands Work With Dermadream</h2>
+          <h2>Why Work With Dermadream</h2>
           <p class="section-lead">More than individual products, Dermadream helps buyers build coordinated microneedling product lines — from device and consumable matching to private label, batch production and repeat supply.</p>
         </div>
         <div class="advantage-grid">
           <div class="advantage-item"><small>01 Product System</small><h3>Device + Consumable Matching</h3><p>Plan compatible devices, cartridges, applicators and reorder consumables as one connected product system.</p></div>
           <div class="advantage-item"><small>02 Product Development</small><h3>OEM / ODM Project Support</h3><p>Support model selection, customization direction, samples and product-line development for different market needs.</p></div>
-          <div class="advantage-item"><small>03 Brand Build</small><h3>Private Label &amp; Packaging</h3><p>Coordinate logo, color, packaging, manual, inserts, kits and product presentation.</p></div>
+          <div class="advantage-item"><small>03 Customization</small><h3>Private Label &amp; Packaging</h3><p>Coordinate logo, color, packaging, manual, inserts, kits and product presentation.</p></div>
           <div class="advantage-item"><small>04 Supply Continuity</small><h3>Batch &amp; Reorder Support</h3><p>Support the project from sample confirmation to batch production and stable repeat consumable supply.</p></div>
         </div>
       </div>
